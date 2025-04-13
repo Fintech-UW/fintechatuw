@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://Fintech-UW.github.io/fintechatuw",
+  "homepage": "https://fintech-uw.github.io/fintechatuw/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
