@@ -17,7 +17,7 @@ export default function Home() {
     <main className="">
       <section
         style={{
-          backgroundImage: `url('/UWMemU.jpg')`,
+          backgroundImage: `url('/fintechatuw/UWMemU.jpg')`,
           width: "100%",
           height: "100vh",
           backgroundSize: "cover",
@@ -34,7 +34,7 @@ export default function Home() {
             <Link to="/"> 
             <div className="flex items-center gap-4">
               <img
-                src="/fintech-at-uw-logo.png"
+                src="/fintechatuw/fintech-at-uw-logo.png"
                 style={{ width: "50px", height: "auto" }}
                 alt="Fintech Logo"
               />

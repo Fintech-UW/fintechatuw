@@ -11,7 +11,7 @@ const Team = () => {
           <Link to="/"> 
           <div className="flex items-center gap-4">
               <img
-                src="/fintech-at-uw-logo.png"
+                src="/fintechatuw/fintech-at-uw-logo.png"
                 style={{ width: "50px", height: "auto" }}
                 alt="Fintech Logo"
               />
@@ -47,7 +47,7 @@ const Team = () => {
           {/* Sample Card */}
           <div className="bg-white rounded-xl shadow-md p-6 text-center hover:shadow-lg transition">
             <img
-              src="/e-board_images/ConanLe.jpeg"
+              src="/fintechatuw/e-board_images/ConanLe.jpeg"
               alt="Member Name"
               className="w-32 h-32 mx-auto rounded-full object-cover mb-4"
             />
@@ -61,7 +61,7 @@ const Team = () => {
           {/* Add more cards here... */}
           <div className="bg-white rounded-xl shadow-md p-6 text-center hover:shadow-lg transition">
             <img
-              src="/e-board_images/JiapengZHENG.jpeg"
+              src="/fintechatuw/e-board_images/JiapengZHENG.jpeg"
               alt="Member Name"
               className="w-32 h-32 mx-auto rounded-full object-cover mb-4"
             />
@@ -74,7 +74,7 @@ const Team = () => {
 
           <div className="bg-white rounded-xl shadow-md p-6 text-center hover:shadow-lg transition">
             <img
-              src="/e-board_images/goodLookingManSaul.jpeg"
+              src="/fintechatuw/e-board_images/goodLookingManSaul.jpeg"
               alt="Member Name"
               className="w-32 h-32 mx-auto rounded-full object-cover mb-4"
             />
@@ -87,7 +87,7 @@ const Team = () => {
 
           <div className="bg-white rounded-xl shadow-md p-6 text-center hover:shadow-lg transition">
             <img
-              src="/e-board_images/angelMorales.jpeg"
+              src="/fintechatuw/e-board_images/angelMorales.jpeg"
               alt="Member Name"
               className="w-32 h-32 mx-auto rounded-full object-cover mb-4"
             />
