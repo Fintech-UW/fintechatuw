@@ -23,12 +23,10 @@ const Team = () => {
           </Link>
           {/* Right side: Navigation links */}
           <ul className="flex gap-6 font-medium">
-            <li>About</li>
-            <li>Events</li>
-            <li>Resources</li>
-            <li>
-              <Link to="/team">The Team</Link>
-            </li>
+            <li><Link to="/about">About</Link></li>
+            <li><Link to="/events">Events</Link></li>
+            <li><Link to="/resources">Resources</Link> </li>
+            <li><Link to="/team">The Team</Link></li>
           </ul>
         </div>
       </nav>
@@ -46,17 +44,19 @@ const Team = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12">
           {/* Sample Card */}
           <div className="bg-white rounded-xl shadow-md p-6 text-center hover:shadow-lg transition">
-            <img
-              src="/fintechatuw/e-board_images/ConanLe.jpeg"
-              alt="Member Name"
-              className="w-32 h-32 mx-auto rounded-full object-cover mb-4"
-            />
-            <h3 className="text-xl font-semibold">Conan Le</h3>
-            <p className="text-sm text-gray-500">Co-President</p>
-            <p className="mt-2 text-sm">
-              Brief bio or what they do in the club.
-            </p>
-          </div>
+              <img
+                src="/fintechatuw/e-board_images/ConanLe.jpeg"
+                alt="Conan Le"
+                className="w-32 h-32 mx-auto rounded-full object-cover mb-4"
+              />
+              <h3 className="text-xl font-semibold">Conan Le</h3>
+              <p className="text-sm text-gray-500">Co-President</p>
+              <p className="mt-2 text-sm">
+                Hi! My name is Conan and I’m a sophomore majoring in Actuarial Science, Finance, and Risk Management & Insurance.
+                I’m an incoming actuarial intern at Northwestern Mutual, and am passionate about using financial data to make decisions.
+                In my free time, I like to lift, gamble, and cook!
+              </p>
+            </div>
 
           {/* Add more cards here... */}
           <div className="bg-white rounded-xl shadow-md p-6 text-center hover:shadow-lg transition">
@@ -68,7 +68,9 @@ const Team = () => {
             <h3 className="text-xl font-semibold">Jiapeng Zheng</h3>
             <p className="text-sm text-gray-500">Co-President</p>
             <p className="mt-2 text-sm">
-              Brief bio or what they do in the club.
+            Hey, I’m JP and I’m a sophomore double majoring in Finance and Risk Management. This summer, I’ll be with Northwestern Mutual
+             as an Investment Strategy Intern for fixed income and equity markets. I’m a big fan of FinTech and inspired by how it’s
+              transforming the way people invest and build wealth.
             </p>
           </div>
 
@@ -79,7 +81,7 @@ const Team = () => {
               className="w-32 h-32 mx-auto rounded-full object-cover mb-4"
             />
             <h3 className="text-xl font-semibold">Saul Orbe</h3>
-            <p className="text-sm text-gray-500">Software Lead</p>
+            <p className="text-sm text-gray-500">VP of Technology</p>
             <p className="mt-2 text-sm">
               Brief bio or what they do in the club.
             </p>

@@ -45,15 +45,11 @@ export default function Home() {
             </div>
             </Link>
             {/* Right side: Navigation links */}
-            <ul
-              className={`flex gap-6 font-medium ${!scrolled ? "text-shadow-lg/100" : ""}`}
-            >
-              <li>About</li>
-              <li>Events</li>
-              <li>Resources</li>
-              <li>
-                <Link to="/team">The Team</Link>
-              </li>
+            <ul className={`flex gap-6 font-medium ${!scrolled ? "text-shadow-lg/100" : ""}`}>
+              <li><Link to="/about">About</Link></li>
+              <li><Link to="/events">Events</Link></li>
+              <li><Link to="/resources">Resources</Link> </li>
+              <li><Link to="/team">The Team</Link></li>
             </ul>
           </div>
         </nav>
@@ -89,6 +85,26 @@ export default function Home() {
           to help students stay ahead, learn real skills, and explore career opportunities
           that blend both fields.
         </p>
+      </section>
+
+      {/* Join Us Section */}
+      <section className="bg-blue-100 py-20 px-6 md:px-20 text-center">
+        <h2 className="text-4xl font-bold mb-6">Join Us</h2>
+        <p className="text-lg max-w-3xl mx-auto text-gray-700 mb-6">
+          Ready to become a part of the Fintech@UW community? Fill out the form below to get started!
+        </p>
+
+        {/* Link to Google Form */}
+        <div className="text-center">
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSfiebjLbKDPSHkEdRyjEW-38mz08c6yZyQXCq60P4JCvg5B5g/viewform?usp=header"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block bg-blue-500 text-white px-6 py-3 rounded-lg text-lg font-semibold hover:bg-blue-600 transition"
+          >
+            Fill Out the Form to Join
+          </a>
+        </div>
       </section>
 
       <footer></footer>
