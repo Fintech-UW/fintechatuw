@@ -107,6 +107,44 @@ export default function Home() {
         </div>
       </section>
 
+    {/* Company Logo Carousel */}
+      <section className="overflow-hidden bg-white py-20 px-6 text-center">
+        <h2 className="text-4xl font-bold mb-10">Companies our members have worked for</h2>
+        <div className="relative w-full overflow-hidden">
+          <div
+            className="flex gap-10 w-max"
+            style={{
+              animation: "scrollLeft 40s linear infinite",
+              whiteSpace: "nowrap",
+            }}
+          >
+            {[
+              "godaddy.png", "fetch_rewards.png", "nvidia.png", "meta.png", "netflix.png",
+              "google.png", "amazon.png", "microsoft.png", "oracle.png", "f5.png", "apple.png",
+              "godaddy.png", "fetch_rewards.png", "nvidia.png", "meta.png", "netflix.png",
+              "google.png", "amazon.png", "microsoft.png", "oracle.png", "f5.png", "apple.png"
+            ].map((logo, i) => (
+              <img
+                key={i}
+                src={`/fintechatuw/company_logos/${logo}`}
+                alt={logo}
+                className="h-16 w-auto object-contain"
+              />
+            ))}
+          </div>
+        </div>
+
+        <style>
+          {`
+            @keyframes scrollLeft {
+              0% { transform: translateX(0%); }
+              100% { transform: translateX(-50%); }
+            }
+          `}
+        </style>
+      </section>
+
+      {/* Footer */}
       <footer></footer>
     </main>
   );
