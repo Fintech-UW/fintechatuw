@@ -119,10 +119,10 @@ export default function Home() {
             }}
           >
             {[
-              "godaddy.png", "fetch_rewards.png", "nvidia.png", "meta.png", "netflix.png",
-              "google.png", "amazon.png", "microsoft.png", "oracle.png", "f5.png", "apple.png",
-              "godaddy.png", "fetch_rewards.png", "nvidia.png", "meta.png", "netflix.png",
-              "google.png", "amazon.png", "microsoft.png", "oracle.png", "f5.png", "apple.png"
+               "meta.png", "netflix.png","amazon.png", "mastercard.png", "c-1-logo.png", "vikings.png","northwestern.png","humana.png", "aon.png", "americanFamily.png",
+               "allstate.png", "bhsi-logo.png", "munich.png", "m3.png", "TDS.png", "Skyward.png",
+              "meta.png", "netflix.png","amazon.png","mastercard.png", "c-1-logo.png", "vikings.png","northwestern.png","humana.png", "aon.png",  "americanFamily.png", 
+              "allstate.png", "bhsi-logo.png", "munich.png", "m3.png", "TDS.png", "Skyward.png"
             ].map((logo, i) => (
               <img
                 key={i}
