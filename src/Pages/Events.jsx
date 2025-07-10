@@ -34,7 +34,16 @@ const Events = () => {
 
       {/* Page content */}
       <section className="text-center py-16 px-4 mt-32">
-       <p>WORK IN PROGRESS</p>
+        <h1 className="text-5xl font-bold mb-4">Upcoming Events</h1>
+        <div style={{ display: "flex", justifyContent: "center", paddingTop: "20px" }}>
+          <iframe
+            src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=America%2FChicago&title=FinTech%40UW%20Events&src=Y19lNmI4YzZjZjQwNThhNGVjYmQ3MjYxYzg5MmQ2YjZkYWZiN2Y2NGZlZTMyYzc3ZTEzYmIzNGNiNzBiMzg4NWZmQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&color=%23d50000&color=%230b8043"
+            style={{ border: "solid 1px #777", borderRadius: "16px", boxShadow: "0 4px 20px rgba(213, 0, 0, 0.3)"
+          }}
+            width="1000"
+            height="600">
+          </iframe>
+        </div>
       </section>
 
       {/* Footer Content */}
