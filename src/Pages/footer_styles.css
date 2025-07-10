@@ -1,0 +1,59 @@
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 14rem;
+    padding-left: 120px;
+    margin-top: 120px;
+}
+
+.footer-inside {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-inside-right {
+    display: flex;
+    flex-direction: column;
+    margin-top: -12px;
+}
+
+
+#text {
+    margin: 30px;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 18px;
+}
+
+#text-email {
+    margin: 30px;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 18px;
+}
+
+#text-club-name {
+    margin: 30px;
+    letter-spacing: 2px;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 22px;
+}
+
+#text-padding-bottom {
+    margin: 30px;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 18px;
+    padding-bottom: 100px;
+}
+
+#instagram-logo {
+    max-width: 40px;
+    display: inline-block;
+}
+#linkedin-logo {
+    max-width: 35px;
+    display: inline-block;
+}
+
+.logo-container {
+    display: inline-block;
+}

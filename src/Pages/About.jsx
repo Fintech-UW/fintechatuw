@@ -65,6 +65,28 @@ const About = () => {
           </div>
         </div>
       </section>
+
+      {/* Footer Content */}
+      <section>
+        <div class="footer">
+          <div class="footer-inside">
+            <p id="text"><Link to="/team">The Team</Link></p>
+            <p id="text"><Link to="/about">Our Mission</Link></p>
+            <p id="text-padding-bottom"><Link to="/resources">Resources</Link></p>
+          </div>
+          <div class="footer-inside-right">
+            <p id="text-club-name"><Link to="/"><strong>UW-Madison Fintech Club</strong></Link></p>
+            <p id="text-email">Email: <a href="mailto:fintechuwmadison@outlook.com"><u>fintechuwmadison@outlook.com</u></a></p>
+            <p id="text">
+              <span className="location-text">Madison, Wisconsin 53706       </span> {/* Added whitespace to improve appearance */}
+              <span className="logo-container">
+                <a href="https://www.linkedin.com/company/fintech-uw/" target="_blank"><img src="/fintechatuw/socials-images/linkedin.png" id="linkedin-logo" /></a>
+                <a href="https://www.instagram.com/fintechuw/" target="_blank"><img src="/fintechatuw/socials-images/instagram.png" id="instagram-logo" /></a>
+              </span>
+            </p>   
+          </div>
+        </div>
+      </section>
     </main>
   );
 };
