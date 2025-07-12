@@ -15,7 +15,7 @@
 .footer-inside-right {
     display: flex;
     flex-direction: column;
-    margin-top: -12px;
+    margin-top: -9px;
 }
 
 
@@ -42,6 +42,7 @@
     margin: 30px;
     font-family:'Courier New', Courier, monospace;
     font-size: 18px;
+    margin-top: 32px;
     padding-bottom: 100px;
 }
 
