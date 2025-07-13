@@ -28,6 +28,12 @@ const Events = () => {
             <li><Link to="/events">Events</Link></li>
             <li><Link to="/resources">Resources</Link> </li>
             <li><Link to="/team">The Team</Link></li>
+            <li className="ml-6">
+                <a
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSfiebjLbKDPSHkEdRyjEW-38mz08c6yZyQXCq60P4JCvg5B5g/viewform?usp=header"
+                  className="bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700 transition"
+              >Join</a>
+            </li>
           </ul>
         </div>
       </nav>
