@@ -10,7 +10,6 @@ This website serves as the hub for Fintech@UW — sharing information about our 
 
 - **Frontend:** React.js
 - **Styling:** Tailwind CSS
-- **Hosting:** [Add deployment link if available]
 
 ## 🚀 Features
 
