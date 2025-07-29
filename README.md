@@ -1,39 +1,30 @@
 # Fintech@UW Website 🌐
 
-This is the official website for **Fintech@UW**, a student-run organization at the University of Wisconsin–Madison focused on exploring the intersection of finance and technology. The site provides information about our mission, events, and leadership, and streamlines member engagement through intuitive design and tooling.
+Welcome to the official website for **Fintech@UW**, the University of Wisconsin–Madison's student organization dedicated to exploring the intersection of finance and technology.
+
+## 💡 Overview
+
+This website serves as the hub for Fintech@UW — sharing information about our mission, upcoming events, and member engagement opportunities. Built with a modern tech stack, the site is designed for scalability, accessibility, and ease of use for both members and club leadership.
 
 ## 🛠️ Tech Stack
 
-- **Frontend:** React.js, Tailwind CSS
-- **Hosting:** [Add if deployed — e.g., Vercel or Netlify]
+- **Frontend:** React.js
+- **Styling:** Tailwind CSS
+- **Hosting:** [Add deployment link if available]
 
 ## 🚀 Features
 
-- Responsive homepage with modern UI
-- Event sign-up form (can integrate Google Forms or similar)
-- Easy-to-edit structure for club updates
-- Optimized for performance and accessibility
+- Responsive design for desktop and mobile
+- Dynamic homepage with upcoming events and club information
+- Event signup functionality (can integrate with third-party tools)
+- Simple architecture for easy updates and content changes
 
-## 💡 Purpose
+## 🔧 Getting Started
 
-We built this site to:
-- Serve as a public face for our organization
-- Help new students learn about Fintech@UW
-- Reduce manual effort for officers by centralizing sign-ups and information
-
-## 👨‍💻 My Contributions
-
-- Architected the full frontend using **React** and **Tailwind**
-- Designed UI components and layouts from scratch
-- Integrated tools that helped reduce admin work by 5+ hours/week
-- Led technical direction and coordinated updates with the team
-
-## 📦 Getting Started
-
-Clone this repo and run locally:
+To run the project locally:
 
 ```bash
-git clone https://github.com/your-username/fintech-uw-site.git
-cd fintech-uw-site
+git clone https://github.com/fintechuw/fintech-website.git
+cd fintech-website
 npm install
 npm run dev
