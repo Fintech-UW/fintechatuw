@@ -1,12 +1,39 @@
-# React + Vite
+# Fintech@UW Website 🌐
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is the official website for **Fintech@UW**, a student-run organization at the University of Wisconsin–Madison focused on exploring the intersection of finance and technology. The site provides information about our mission, events, and leadership, and streamlines member engagement through intuitive design and tooling.
 
-Currently, two official plugins are available:
+## 🛠️ Tech Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Frontend:** React.js, Tailwind CSS
+- **Hosting:** [Add if deployed — e.g., Vercel or Netlify]
 
-## Expanding the ESLint configuration
+## 🚀 Features
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Responsive homepage with modern UI
+- Event sign-up form (can integrate Google Forms or similar)
+- Easy-to-edit structure for club updates
+- Optimized for performance and accessibility
+
+## 💡 Purpose
+
+We built this site to:
+- Serve as a public face for our organization
+- Help new students learn about Fintech@UW
+- Reduce manual effort for officers by centralizing sign-ups and information
+
+## 👨‍💻 My Contributions
+
+- Architected the full frontend using **React** and **Tailwind**
+- Designed UI components and layouts from scratch
+- Integrated tools that helped reduce admin work by 5+ hours/week
+- Led technical direction and coordinated updates with the team
+
+## 📦 Getting Started
+
+Clone this repo and run locally:
+
+```bash
+git clone https://github.com/your-username/fintech-uw-site.git
+cd fintech-uw-site
+npm install
+npm run dev
