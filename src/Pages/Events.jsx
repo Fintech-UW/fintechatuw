@@ -17,7 +17,7 @@ const Events = () => {
                 alt="Fintech Logo"
               />
               <div>
-                <h1 className="text-xl font-bold">Fintech Club</h1>
+                <h1 className="text-xl font-bold">FinTech Club</h1>
                 <h1 className="text-sm">University of Wisconsin–Madison</h1>
               </div>
           </div>
