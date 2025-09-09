@@ -131,7 +131,7 @@ const Team = () => {
             <h3 className="text-xl font-semibold">Angel Morales</h3>
             <p className="text-sm text-gray-500">Mr. Meta</p>
             <p className="mt-2 text-sm">
-              Hi, my name is Angel and I’m a junior. Through my time at Meta I have become passionate about AI and its applications in finance.
+              Hi, my name is Angel and I’m a junior. Through my time at Meta, I have become passionate about AI and its applications in finance.
             </p>
             <p className="text-red-500 font-bold">
               Click to learn more about me!
@@ -163,7 +163,7 @@ const Team = () => {
             <h3 className="text-xl font-semibold">Sara Rodock</h3>
             <p className="text-sm text-gray-500">Advisor</p>
             <p className="mt-2 text-sm">
-              Hi, my name is Sara and I’m the club advisor. 
+              Hi, my name is Sara, and I’m the club advisor. 
             </p>
             <p className="text-red-500 font-bold">
               Click to learn more about me!
@@ -517,8 +517,7 @@ const Team = () => {
             <h3 className="text-xl font-semibold">Dora Tsai</h3>
             <p className="text-sm text-gray-500">Chair of Outreach</p>
             <p className="mt-2 text-sm">
-              Hi, my name is Dora and I'm a Junior. I am interested in being involved in a club which helps people explore new interests in fintech.
-            </p>
+            Hi, my name is Dora and I’m a junior. I joined this club because I’m excited to be part of a community that encourages exploring new interests in fintech.            </p>
             <p className="text-red-500 font-bold">
               Click to learn more about me!
             </p>
