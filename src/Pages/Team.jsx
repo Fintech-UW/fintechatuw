@@ -58,14 +58,14 @@ const Team = () => {
             onClick={() => setSelectedMember(selectedMember === "conan" ? null : "conan")}
           >
             <img
-              src="/fintechatuw/e-board_images/ConanLe.jpeg"
+              src="/fintechatuw/e-board_images/CL.png"
               alt="Conan Le"
-              className="w-32 h-32 mx-auto rounded-full object-cover mb-4"
+              className="w-32 h-32 mx-auto rounded-full object-cover object-center mb-4"
             />
             <h3 className="text-xl font-semibold">Conan Le</h3>
             <p className="text-sm text-gray-500">Co-President</p>
             <p className="mt-2 text-sm">
-            Hi! My name is Conan and I’m a junior. Through my actuarial internship at Northwestern Mutual, I have grown passionate about using financial data to make decisions. 
+            Hi! My name is Conan, and I’m a junior. During my actuarial internship at Northwestern Mutual, I developed a passion for using financial data to drive decision-making.
             <p className="text-red-500 font-bold">
               Click to learn more about me!
             </p>
@@ -92,14 +92,14 @@ const Team = () => {
             onClick={() => setSelectedMember(selectedMember === "Jiapeng" ? null : "Jiapeng")}
           >
             <img
-              src="/fintechatuw/e-board_images/JiapengZHENG.jpeg"
+              src="/fintechatuw/e-board_images/JP.png"
               alt="Jiapeng Zheng"
-              className="w-32 h-32 mx-auto rounded-full object-cover mb-4"
+              className= "w-32 h-32 mx-auto rounded-full object-cover object-center object-[50%_50%]"
             />
             <h3 className="text-xl font-semibold">Jiapeng Zheng</h3>
             <p className="text-sm text-gray-500">Co-President</p>
             <p className="mt-2 text-sm">
-              Hey, I’m Jp and I’m a junior. Through my internship at Northwestern Mutual I have grown to love expanding my knowledge on fintech.
+            Hey, I’m Jp, and I’m a junior. Through my internship at Northwestern Mutual, I have grown to love expanding my knowledge of fintech.
             </p>
             <p className="text-red-500 font-bold">
               Click to learn more about me!
@@ -124,14 +124,14 @@ const Team = () => {
            onClick={() => setSelectedMember(selectedMember === "Angel" ? null : "Angel")}
           >
             <img
-              src="/fintechatuw/e-board_images/angel morales.jpeg"
+              src="/fintechatuw/e-board_images/angel morales.png"
               alt="Angel Morales"
-              className="w-32 h-32 mx-auto rounded-full object-cover mb-4"
+              className="w-32 h-32 mx-auto rounded-full object-cover object-center mb-4"
             />
             <h3 className="text-xl font-semibold">Angel Morales</h3>
             <p className="text-sm text-gray-500">Mr. Meta</p>
             <p className="mt-2 text-sm">
-              Hi, my name is Angel and I’m a junior. Through my time at Meta, I have become passionate about AI and its applications in finance.
+              Hi, my name is Angel, and I’m a junior. Through my time at Meta, I have become passionate about AI and its applications in finance.
             </p>
             <p className="text-red-500 font-bold">
               Click to learn more about me!
@@ -195,14 +195,14 @@ const Team = () => {
             onClick={() => setSelectedMember(selectedMember === "Saul" ? null : "Saul")}
           >
             <img
-              src="/fintechatuw/e-board_images/goodLookingManSaul.jpeg"
+              src="/fintechatuw/e-board_images/saul orbe.jpeg"
               alt="Saul Orbe"
               className="w-32 h-32 mx-auto rounded-full object-cover mb-4"
             />
             <h3 className="text-xl font-semibold">Saul Orbe</h3>
             <p className="text-sm text-gray-500">VP of Technology</p>
             <p className="mt-2 text-sm">
-              Hi, my name is Saul and I’m a junior. I am passionate about using technology to solve real-world problems and improve financial systems. 
+              Hi, my name is Saul, and I’m a junior. I am passionate about using technology to solve real-world problems and improve financial systems. 
             </p>
             <p className="text-red-500 font-bold">
               Click to learn more about me!
@@ -234,7 +234,7 @@ const Team = () => {
             <h3 className="text-xl font-semibold">Anish Mantri</h3>
             <p className="text-sm text-gray-500">Chair of Technology</p>
             <p className="mt-2 text-sm">
-              Hi, my name is Anish and I'm a sophmore. I am passionate about using technology to predict financial markets.
+              Hi, my name is Anish, and I'm a sophomore. I am passionate about using technology to predict financial markets.
             </p>
             <p className="text-red-500 font-bold">
               Click to learn more about me!
@@ -266,7 +266,7 @@ const Team = () => {
             <h3 className="text-xl font-semibold">Michael Tang</h3>
             <p className="text-sm text-gray-500">Chair of Technology</p>
             <p className="mt-2 text-sm">
-              Hi, my name is Michael and I'm a junior. I am passionate about using machine learning to research finance.
+              Hi, my name is Michael, and I'm a junior. I am passionate about using machine learning to research finance.
             </p>
             <p className="text-red-500 font-bold">
               Click to learn more about me!
@@ -307,7 +307,7 @@ const Team = () => {
             <h3 className="text-xl font-semibold">Nate Twente</h3>
             <p className="text-sm text-gray-500">VP of Finance</p>
             <p className="mt-2 text-sm">
-              Hi, my name is Nate and I’m a junior. I am passionate about expanding student interest in financial literacy and technology.
+              Hi, my name is Nate, and I’m a junior. I am passionate about expanding student interest in financial literacy and technology.
             </p>
             <p className="text-red-500 font-bold">
               Click to learn more about me!
@@ -339,7 +339,7 @@ const Team = () => {
             <h3 className="text-xl font-semibold">Bryant Wright</h3>
             <p className="text-sm text-gray-500">Chair of Finance</p>
             <p className="mt-2 text-sm">
-              Hi, my name is Bryant and I'm a Junior. I am deeply interested in exploring the analytical aspects of finance.
+              Hi, my name is Bryant, and I'm a Junior. I am deeply interested in exploring the analytical aspects of finance.
             </p>
             <p className="text-red-500 font-bold">
               Click to learn more about me!
@@ -347,7 +347,7 @@ const Team = () => {
             {selectedMember === "Bryant" && (
               <div className="mt-4 text-sm text-gray-600 space-y-2">
                 <p>Major: Finance, Accounting</p>
-                <p>Hobbies: Watching Basketball, Going on runs, Reading</p>
+                <p>Hobbies: Watching Basketball, Running, Reading</p>
                 <a
                   href="https://www.linkedin.com/in/bryant-wright-51892b31b/"
                   target="_blank"
@@ -379,7 +379,7 @@ const Team = () => {
             <h3 className="text-xl font-semibold">Brody Kerscher</h3>
             <p className="text-sm text-gray-500">VP of Operations</p>
             <p className="mt-2 text-sm">
-              Hi, my name is Brody and I’m a junior. I am passionate about expanding my knowledge on financial technology and helping others do the same.
+            Hi, my name is Brody, and I’m a junior. I am passionate about expanding my knowledge of financial technology and helping others do the same.
             </p>
             <p className="text-red-500 font-bold">
               Click to learn more about me!
@@ -411,7 +411,7 @@ const Team = () => {
             <h3 className="text-xl font-semibold">Genaro Camas</h3>
             <p className="text-sm text-gray-500">Chair of Operations</p>
             <p className="mt-2 text-sm">
-              Hi, my name is Genaro and I'm a Junior. I am interested in learning about the operational side of managing a club and also want to learn more about fintech.
+            Hi, my name is Genaro, and I'm a junior. I am interested in learning about the operational side of managing a club and also in gaining more knowledge about fintech.
             </p>
             <p className="text-red-500 font-bold">
               Click to learn more about me!
@@ -443,7 +443,7 @@ const Team = () => {
             <h3 className="text-xl font-semibold">Carter Fellows</h3>
             <p className="text-sm text-gray-500">Chair of Operations</p>
             <p className="mt-2 text-sm">
-              Hi, my name is Carter and I'm a Junior. I am interested in bulding this club from the ground up and gaining experience in leadership and management.
+            Hi, my name is Carter, and I'm a junior. I am interested in building this club from the ground up and gaining experience in leadership and management
             </p>
             <p className="text-red-500 font-bold">
               Click to learn more about me!
@@ -485,7 +485,7 @@ const Team = () => {
             <h3 className="text-xl font-semibold">Arnav Gupta</h3>
             <p className="text-sm text-gray-500">VP of Outreach</p>
             <p className="mt-2 text-sm">
-              Hi, my name is Arnav and I’m a junior. I am highly interested in AI and other technologies used in the financial industry.
+              Hi, my name is Arnav, and I’m a junior. I am highly interested in AI and other technologies used in the financial industry.
             </p>
             <p className="text-red-500 font-bold">
               Click to learn more about me!
@@ -517,7 +517,7 @@ const Team = () => {
             <h3 className="text-xl font-semibold">Dora Tsai</h3>
             <p className="text-sm text-gray-500">Chair of Outreach</p>
             <p className="mt-2 text-sm">
-            Hi, my name is Dora and I’m a junior. I joined this club because I’m excited to be part of a community that encourages exploring new interests in fintech.            </p>
+            Hi, my name is Dora, and I’m a junior. I joined this club because I’m excited to be part of a community that encourages exploring new interests in fintech.            </p>
             <p className="text-red-500 font-bold">
               Click to learn more about me!
             </p>
@@ -541,14 +541,14 @@ const Team = () => {
            onClick={() => setSelectedMember(selectedMember === "Eli" ? null : "Eli")}
           >
             <img
-              src="/fintechatuw/e-board_images/eli olson.jpg"
+              src="/fintechatuw/e-board_images/eli olson.png"
               alt="Eli Olson"
               className="w-32 h-32 mx-auto rounded-full object-cover mb-4"
             />
             <h3 className="text-xl font-semibold">Eli Olson</h3>
             <p className="text-sm text-gray-500">Chair of Outreach</p>
             <p className="mt-2 text-sm">
-              Hi, my name is Eli and I'm a Junior. I am interested in a club that helps me reach my goals of learning more about business and stem and fintech club is just the right one!
+            Hi, my name is Eli, and I'm a junior. I am interested in a club that helps me reach my goals of learning more about business and STEM, and the fintech club is just the right one!
             </p>
             <p className="text-red-500 font-bold">
               Click to learn more about me!
@@ -581,7 +581,7 @@ const Team = () => {
             <p id="text-padding-bottom"><Link to="/resources">Resources</Link></p>
           </div>
           <div className="footer-inside-right">
-            <p id="text-club-name"><Link to="/"><strong>UW-Madison Fintech Club</strong></Link></p>
+            <p id="text-club-name"><Link to="/"><strong>FinTech@UW</strong></Link></p>
             <p id="text-email">
               Email: <a href="mailto:fintechuwmadison@outlook.com"><u>fintechuwmadison@outlook.com</u></a>
             </p>
