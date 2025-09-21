@@ -169,7 +169,7 @@ export default function Home() {
             <p id="text-padding-bottom"><Link to="/resources">Resources</Link></p>
           </div>
           <div class="footer-inside-right">
-            <p id="text-club-name"><Link to="/"><strong>UW-Madison FinTech Club</strong></Link></p>
+            <p id="text-club-name"><Link to="/"><strong>FinTech@UW</strong></Link></p>
             <p id="text-email">Email: <a href="mailto:fintechuwmadison@outlook.com"><u>fintechuwmadison@outlook.com</u></a></p>
             <p id="text">
               <span className="location-text">Madison, Wisconsin 53706       </span> {/* Added whitespace to improve appearance */}
