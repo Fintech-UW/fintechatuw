@@ -16,26 +16,20 @@ const Resources = () => {
                 alt="Fintech Logo"
               />
               <div>
-                <h1 className="text-xl font-bold">Fintech Club</h1>
+                <h1 className="text-xl font-bold">FinTech Club</h1>
                 <h1 className="text-sm">University of Wisconsin–Madison</h1>
               </div>
             </div>
           </Link>
-           {/* Right side: Navigation links */}
-                    <ul className="flex gap-6 font-medium">
-                      <li><Link to="/about">About</Link></li>
-                      <li><Link to="/events">Events</Link></li>
-                      <li><Link to="/resources">Resources</Link> </li>
-                      <li><Link to="/team">The Team</Link></li>
-                      <li className="ml-6">
-                          <a
-                            href="https://docs.google.com/forms/d/e/1FAIpQLSfiebjLbKDPSHkEdRyjEW-38mz08c6yZyQXCq60P4JCvg5B5g/viewform?usp=header"
-                            className="bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700 transition"
-                        >Join</a>
-                      </li>
-                    </ul>
-                  </div>
-                </nav>
+          {/* Navigation Links */}
+          <ul className="flex gap-6 font-medium">
+            <li><Link to="/about">About</Link></li>
+            <li><Link to="/events">Events</Link></li>
+            <li><Link to="/resources">Resources</Link></li>
+            <li><Link to="/team">The Team</Link></li>
+          </ul>
+        </div>
+      </nav>
 
       {/* Page Heading */}
       <section className="text-center py-16 px-4 mt-32">
