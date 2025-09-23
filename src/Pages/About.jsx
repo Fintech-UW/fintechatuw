@@ -4,38 +4,72 @@ import { Link } from "react-router-dom";
 const About = () => {
   return (
     <main className="min-h-screen bg-gray-50 text-gray-800">
-      {/* Navbar */}
-      <nav className="fixed w-full top-0 z-50 bg-white shadow-md text-black">
-        <div className="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
-          {/* Left side: Logo + Titles */}
-          <Link to="/">
-            <div className="flex items-center gap-4">
-              <img
-                src="/fintechatuw/fintech-at-uw-logo.png"
-                style={{ width: "50px", height: "auto" }}
-                alt="Fintech Logo"
-              />
-              <div>
-                <h1 className="text-xl font-bold">FinTech Club</h1>
-                <h1 className="text-sm">University of Wisconsin–Madison</h1>
-              </div>
-            </div>
-          </Link>
-          {/* Right side: Navigation links */}
-                   <ul className="flex gap-6 font-medium">
-                     <li><Link to="/about">About</Link></li>
-                     <li><Link to="/events">Events</Link></li>
-                     <li><Link to="/resources">Resources</Link> </li>
-                     <li><Link to="/team">The Team</Link></li>
-                     <li className="ml-6">
-                         <a
-                           href="https://docs.google.com/forms/d/e/1FAIpQLSfiebjLbKDPSHkEdRyjEW-38mz08c6yZyQXCq60P4JCvg5B5g/viewform?usp=header"
-                           className="bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700 transition"
-                       >Join</a>
-                     </li>
-                   </ul>
+         {/* NAV (always white, shadow, blue Join) */}
+         <nav className="fixed w-full top-0 z-50 bg-white shadow-md text-black">
+           <div className="max-w-7xl mx-auto px-3 sm:px-4">
+             <div className="flex h-14 sm:h-16 items-center gap-3">
+               {/* Left: brand */}
+               <Link to="/" className="flex items-center gap-3 min-w-0 flex-none">
+                 <img
+                   src="/fintechatuw/fintech-at-uw-logo.png"
+                   alt="Fintech Logo"
+                   className="w-10 h-auto sm:w-12 shrink-0"
+                 />
+                 <div className="min-w-0">
+                   <h1 className="text-base sm:text-lg font-bold truncate">Fintech Club</h1>
+                   <h2 className="text-xs sm:text-sm truncate">
+                     University of Wisconsin–Madison
+                   </h2>
                  </div>
-               </nav>
+               </Link>
+   
+               {/* Middle/Right: links */}
+               <div className="min-w-0 flex-1">
+                 <ul
+                   className="
+                     nav-strip
+                     flex items-center gap-4 sm:gap-6 font-medium text-sm sm:text-base
+                     overflow-x-auto no-scrollbar whitespace-nowrap
+                     md:justify-end
+                   "
+                 >
+                   <li className="shrink-0">
+                     <Link to="/about" className="hover:opacity-80">About</Link>
+                   </li>
+                   <li className="shrink-0">
+                     <Link to="/events" className="hover:opacity-80">Events</Link>
+                   </li>
+                   <li className="shrink-0">
+                     <Link to="/resources" className="hover:opacity-80">Resources</Link>
+                   </li>
+                   <li className="shrink-0">
+                     <Link to="/team" className="hover:opacity-80">The Team</Link>
+                   </li>
+   
+                   {/* Desktop Join */}
+                   <li className="hidden md:block shrink-0">
+                     <a
+                       href="https://docs.google.com/forms/d/e/1FAIpQLSfiebjLbKDPSHkEdRyjEW-38mz08c6yZyQXCq60P4JCvg5B5g/viewform?usp=header"
+                       className="inline-block px-4 py-2 rounded-full bg-blue-600 text-white hover:bg-blue-700 transition"
+                     >
+                       Join
+                     </a>
+                   </li>
+                 </ul>
+               </div>
+   
+               {/* Mobile Join */}
+               <div className="flex-none md:hidden">
+                 <a
+                   href="https://docs.google.com/forms/d/e/1FAIpQLSfiebjLbKDPSHkEdRyjEW-38mz08c6yZyQXCq60P4JCvg5B5g/viewform?usp=header"
+                   className="inline-block px-3 py-1.5 rounded-full bg-blue-600 text-white hover:bg-blue-700 transition text-sm"
+                 >
+                   Join
+                 </a>
+               </div>
+             </div>
+           </div>
+         </nav>
 
       {/* Page content */}
       <section className="text-center py-16 px-4 mt-32">
