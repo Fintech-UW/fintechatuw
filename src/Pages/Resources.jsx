@@ -16,10 +16,7 @@ const Resources = () => {
                       className="w-10 h-auto sm:w-12 shrink-0"
                     />
                     <div className="min-w-0">
-                      <h1 className="text-base sm:text-lg font-bold truncate">Fintech Club</h1>
-                      <h2 className="text-xs sm:text-sm truncate">
-                        University of Wisconsin–Madison
-                      </h2>
+                      <h1 className="text-base sm:text-lg font-bold truncate">Fintech@UW</h1>
                     </div>
                   </Link>
       

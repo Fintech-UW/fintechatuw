@@ -66,11 +66,9 @@ export default function Home() {
                   } min-w-0`}
                 >
                   <h1 className="text-base sm:text-lg font-bold truncate">
-                    Fintech Club
+                    FinTech@UW
                   </h1>
-                  <h2 className="text-xs sm:text-sm truncate">
-                    University of Wisconsin–Madison
-                  </h2>
+                  
                 </div>
               </Link>
 
@@ -130,11 +128,10 @@ export default function Home() {
           </div>
         </nav>
 
-
         {/* HERO */}
         <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-4 z-10">
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white drop-shadow-[0_2px_2px_rgba(0,0,0,0.45)]">
-            Welcome to Fintech Club
+            Welcome to FinTech@UW
           </h1>
           <p className="mt-3 sm:mt-4 text-lg sm:text-xl md:text-2xl max-w-2xl text-white drop-shadow-[0_1px_1px_rgba(0,0,0,0.45)]">
             Innovating finance, one student at a time.
