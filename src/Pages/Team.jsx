@@ -113,6 +113,14 @@ const Team = () => {
                 >
                     Visit Conan's LinkedIn
                 </a>
+                <br />
+                <a
+                  href="https://outlook.office.com/mail/deeplink/compose?to=cyle2@wisc.edu" target="_blank"
+                  className="text-blue-500 hover:underline"
+                >
+                  Email Conan
+                </a>
+                
           
               </div>
             )}
@@ -147,6 +155,14 @@ const Team = () => {
                 >
                     Visit JP's LinkedIn
                 </a>
+                <br />
+                <a
+                  href="https://outlook.office.com/mail/deeplink/compose?to=jzheng272@wisc.edu" target="_blank"
+                  className="text-blue-500 hover:underline"
+                >
+                  Email JP
+                </a>
+
               </div>
             )}
           </div>
@@ -179,6 +195,13 @@ const Team = () => {
                 >
                     Visit Angel's LinkedIn
                 </a>
+                <br />
+                <a
+                  href="https://outlook.office.com/mail/deeplink/compose?to=admorales3@wisc.edu" target="_blank"
+                  className="text-blue-500 hover:underline"
+                >
+                  Email Angel
+                </a>
               </div>
             )}
           </div>
@@ -209,6 +232,13 @@ const Team = () => {
                   className="text-blue-500 hover:underline"
                 >
                     Visit Sara's LinkedIn
+                </a>
+                <br />
+                <a
+                  href="https://outlook.office.com/mail/deeplink/compose?to=rodock@wisc.edu" target="_blank"
+                  className="text-blue-500 hover:underline"
+                >
+                  Email Sara
                 </a>
               </div>
             )}
@@ -250,6 +280,13 @@ const Team = () => {
                 >
                     Visit Saul's LinkedIn
                 </a>
+                <br />
+                <a
+                  href="https://outlook.office.com/mail/deeplink/compose?to=orbe@wisc.edu" target="_blank"
+                  className="text-blue-500 hover:underline"
+                >
+                  Email Saul
+                </a>
               </div>
             )}
           </div>
@@ -282,6 +319,13 @@ const Team = () => {
                 >
                     Visit Anish's LinkedIn
                 </a>
+                <br />
+                <a
+                  href="https://outlook.office.com/mail/deeplink/compose?to=agmantri@wisc.edu" target="_blank"
+                  className="text-blue-500 hover:underline"
+                >
+                  Email Anish
+                </a>
               </div>
             )}
           </div>
@@ -313,6 +357,13 @@ const Team = () => {
                   className="text-blue-500 hover:underline"
                 >
                     Visit Michael's LinkedIn
+                </a>
+                <br />
+                <a
+                  href="https://outlook.office.com/mail/deeplink/compose?to=mltang2@wisc.edu" target="_blank"
+                  className="text-blue-500 hover:underline"
+                >
+                  Email Michael
                 </a>
               </div>
             )}
@@ -355,6 +406,13 @@ const Team = () => {
                 >
                     Visit Nate's LinkedIn
                 </a>
+                <br />
+                <a
+                  href="https://outlook.office.com/mail/deeplink/compose?to=ntwente@wisc.edu" target="_blank"
+                  className="text-blue-500 hover:underline"
+                >
+                  Email Nate
+                </a>
               </div>
             )}
           </div>
@@ -386,6 +444,13 @@ const Team = () => {
                   className="text-blue-500 hover:underline"
                 >
                     Visit Bryant's LinkedIn
+                </a>
+                <br />
+                <a
+                  href="https://outlook.office.com/mail/deeplink/compose?to=brwright5@wisc.edu" target="_blank"
+                  className="text-blue-500 hover:underline"
+                >
+                  Email Bryant
                 </a>
               </div>
             )}
@@ -427,6 +492,13 @@ const Team = () => {
                 >
                     Visit Brody's LinkedIn
                 </a>
+                <br />
+                <a
+                  href="https://outlook.office.com/mail/deeplink/compose?to=btkerscher@wisc.edu" target="_blank"
+                  className="text-blue-500 hover:underline"
+                >
+                  Email Brody
+                </a>
               </div>
             )}
           </div>
@@ -459,6 +531,13 @@ const Team = () => {
                 >
                     Visit Genaro's LinkedIn
                 </a>
+                <br />
+                <a
+                  href="https://outlook.office.com/mail/deeplink/compose?to=camasmcilwai@wisc.edu" target="_blank"
+                  className="text-blue-500 hover:underline"
+                >
+                  Email Genaro
+                </a>
               </div>
             )}
           </div>
@@ -490,6 +569,13 @@ const Team = () => {
                   className="text-blue-500 hover:underline"
                 >
                     Visit Carter's LinkedIn
+                </a>
+                <br />
+                <a
+                  href="https://outlook.office.com/mail/deeplink/compose?to=ctfellows@wisc.edu" target="_blank"
+                  className="text-blue-500 hover:underline"
+                >
+                  Email Carter
                 </a>
               </div>
             )}
@@ -533,6 +619,13 @@ const Team = () => {
                 >
                     Visit Arnav's LinkedIn
                 </a>
+                <br />
+                <a
+                  href="https://outlook.office.com/mail/deeplink/compose?to=gupta345@wisc.edu" target="_blank"
+                  className="text-blue-500 hover:underline"
+                >
+                  Email Arnav
+                </a>
               </div>
             )}
           </div>
@@ -563,6 +656,13 @@ const Team = () => {
                   className="text-blue-500 hover:underline"
                 >
                     Visit Dora's LinkedIn
+                </a>
+                <br />
+                <a
+                  href="https://outlook.office.com/mail/deeplink/compose?to=ptsai34@wisc.edu" target="_blank"
+                  className="text-blue-500 hover:underline"
+                >
+                  Email Dora
                 </a>
               </div>
             )}
@@ -595,6 +695,13 @@ const Team = () => {
                   className="text-blue-500 hover:underline"
                 >
                     Visit Eli's LinkedIn
+                </a>
+                <br />
+                <a
+                  href="https://outlook.office.com/mail/deeplink/compose?to=eeolson23@wisc.edu" target="_blank"
+                  className="text-blue-500 hover:underline"
+                >
+                  Email Eli
                 </a>
               </div>
             )}
