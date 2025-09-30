@@ -179,7 +179,7 @@ export default function Home() {
 
       {/* Logos */}
       <section className="overflow-hidden bg-white py-12 px-5 sm:py-20 sm:px-12 md:px-20 text-center">
-        <h2 className="text-3xl sm:text-4xl font-bold mb-8">Companies our members have worked for</h2>
+        <h2 className="text-3xl sm:text-4xl font-bold mb-8">Companies our members have received offers from</h2>
         <div className="relative w-full overflow-hidden">
           <div
             className="flex gap-6 sm:gap-10 w-max"
