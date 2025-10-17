@@ -10,6 +10,46 @@ export default function Home() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  // Ordered by approximate prestige; includes all available logo files
+  const logosOrdered = [
+    "microsoft-word.svg",
+    "amazon.png",
+    "meta.png",
+    "netflix.png",
+    "mastercard.png",
+    "oliver-wyman.png",
+    "PwC.png",
+    "kpmg.png",
+    "allianz.png",
+    "c-1-logo.png",
+    "munich.png",
+    "aon.png",
+    "milliman.png",
+    "Kimberly-Clark.png",
+    "northwestern.png",
+    "allstate.png",
+    "americanFamily.png",
+    "humana.png",
+    "vikings.png",
+    "bhsi-logo.png",
+    "TDS.png",
+    "Skyward.png",
+    "m3.png",
+  ];
+
+  // Boost square-ish logos slightly to reduce perceived whitespace
+  const handleLogoLoad = (e) => {
+    const img = e.currentTarget;
+    const w = img.naturalWidth || 0;
+    const h = img.naturalHeight || 0;
+    if (w && h) {
+      const ratio = w / h;
+      if (ratio < 1.2) {
+        img.classList.add("squareish");
+      }
+    }
+  };
+
   return (
     <main className="overflow-x-hidden">
       {/* Safety + small tweaks */}
@@ -24,18 +64,20 @@ export default function Home() {
           .nav-strip { overflow: visible !important; white-space: normal !important; }
         }
 
-        /* Company logos sizing */
-        .company-logo { height: 22px; }
-        @media (min-width: 640px) { .company-logo { height: 38px; } }
-        @media (min-width: 768px) { .company-logo { height: 52px; } }
+        /* Offer wheel logo sizing: uniform cells for consistent gaps */
+        .logo-cell { display: inline-flex; align-items: center; justify-content: center; width: 120px; height: 64px; overflow: hidden; }
+        @media (min-width: 640px) { .logo-cell { width: 160px; height: 80px; } }
+        @media (min-width: 768px) { .logo-cell { width: 200px; height: 96px; } }
+        .logo-img { width: 100%; height: 100%; object-fit: contain; }
+        .logo-img.squareish { transform: scale(1.15); transform-origin: center; }
 
       `}</style>
 
       <section
         style={{
-          backgroundImage: `url('/fintechatuw/UWMemU.jpg')`,
+          backgroundImage: `url('/fintechatuw/mogridgeCover.png')`,
           width: "100%",
-          minHeight: "85vh",
+          height: "100vh",
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
@@ -98,7 +140,7 @@ export default function Home() {
                   {/* Desktop Join */}
                   <li className="hidden md:block shrink-0">
                     <a
-                      href="https://docs.google.com/forms/d/e/1FAIpQLSfiebjLbKDPSHkEdRyjEW-38mz08c6yZyQXCq60P4JCvg5B5g/viewform?usp=header"
+                      href="https://linktr.ee/fintechuw?fbclid=PAZXh0bgNhZW0CMTEAAadsdHIdE-4ELJo7VeVNAS-uGD8GcrQOas6_JTAtlrDkqbIgwefiHT-LNhZ5bw_aem_ybNM8nOQMb0hocVQXjWqeg"
                       className={`inline-block px-4 py-2 rounded-full transition ${
                         scrolled
                           ? "bg-blue-600 text-white hover:bg-blue-700"
@@ -114,7 +156,7 @@ export default function Home() {
               {/* Mobile Join */}
               <div className="flex-none md:hidden">
                 <a
-                  href="https://docs.google.com/forms/d/e/1FAIpQLSfiebjLbKDPSHkEdRyjEW-38mz08c6yZyQXCq60P4JCvg5B5g/viewform?usp=header"
+                  href="https://linktr.ee/fintechuw?fbclid=PAZXh0bgNhZW0CMTEAAadsdHIdE-4ELJo7VeVNAS-uGD8GcrQOas6_JTAtlrDkqbIgwefiHT-LNhZ5bw_aem_ybNM8nOQMb0hocVQXjWqeg"
                   className={`inline-block px-3 py-1.5 rounded-full text-sm transition ${
                     scrolled
                       ? "bg-blue-600 text-white hover:bg-blue-700"
@@ -134,7 +176,7 @@ export default function Home() {
             Welcome to FinTech@UW
           </h1>
           <p className="mt-3 sm:mt-4 text-lg sm:text-xl md:text-2xl max-w-2xl text-white drop-shadow-[0_1px_1px_rgba(0,0,0,0.45)]">
-            Innovating finance, one student at a time.
+            The first FinTech club at UW-Madison.
           </p>
         </div>
       </section>
@@ -143,9 +185,9 @@ export default function Home() {
       <section className="bg-white py-12 px-5 sm:py-20 sm:px-12 md:px-20 text-center">
         <h2 className="text-3xl sm:text-4xl font-bold mb-5">What We Do</h2>
         <p className="text-base sm:text-lg max-w-3xl mx-auto text-gray-700">
-          Fintech@UW is a student organization focused on the intersection of finance and technology.
-          We empower students through hands-on workshops, networking events, and collaborative projects.
-          Whether you're into coding, crypto, banking, or startups — there's a place here for you.
+          Fintech@UW is a student organization focused on the intersection of finance and technology. 
+          Our mission is to create an enduring FinTech community at UW Madison while equipping our members 
+          with practical experience and expertise to utilize fintech for their personal and professional growth.
         </p>
       </section>
 
@@ -153,9 +195,10 @@ export default function Home() {
       <section className="bg-gray-100 py-12 px-5 sm:py-20 sm:px-12 md:px-20 text-center">
         <h2 className="text-3xl sm:text-4xl font-bold mb-5">Why It Matters</h2>
         <p className="text-base sm:text-lg max-w-3xl mx-auto text-gray-700">
-          The financial world is changing — fast. From decentralized finance to algorithmic trading,
-          today's finance professionals need to understand technology. We're here to help students stay
-          ahead, learn real skills, and explore career opportunities that blend both fields.
+          The financial world is changing quickly. Today's professionals need to be able to blend 
+          their financial expertise with technical ability. We're here to create a network where 
+          students can connect with one another, develop applicable skills, and explore career
+          opportunities that blend both fields.
         </p>
       </section>
 
@@ -176,31 +219,27 @@ export default function Home() {
           </a>
         </div>
       </section>
+      
 
       {/* Logos */}
       <section className="overflow-hidden bg-white py-12 px-5 sm:py-20 sm:px-12 md:px-20 text-center">
         <h2 className="text-3xl sm:text-4xl font-bold mb-8">Companies our members have received offers from</h2>
         <div className="relative w-full overflow-hidden">
           <div
-            className="flex gap-6 sm:gap-10 w-max"
-            style={{ animation: "scrollLeft 40s linear infinite", whiteSpace: "nowrap" }}
+            className="flex items-center gap-6 sm:gap-10 w-max"
+            style={{ animation: "scrollLeft 13.2s linear infinite", whiteSpace: "nowrap" }}
           >
-            {[
-              "meta.png","netflix.png","amazon.png","mastercard.png","c-1-logo.png","vikings.png",
-              "northwestern.png","humana.png","aon.png","americanFamily.png","allstate.png",
-              "bhsi-logo.png","munich.png","m3.png","TDS.png","Skyward.png",
-              "meta.png","netflix.png","amazon.png","mastercard.png","c-1-logo.png","vikings.png",
-              "northwestern.png","humana.png","aon.png","americanFamily.png","allstate.png",
-              "bhsi-logo.png","munich.png","m3.png","TDS.png","Skyward.png"
-            ].map((logo, i) => (
-              <img
-                key={i}
-                src={`/fintechatuw/company_logos/${logo}`}
-                alt={logo}
-                className="company-logo w-auto object-contain"
-                loading="lazy"
-                decoding="async"
-              />
+            {[...logosOrdered, ...logosOrdered].map((logo, i) => (
+              <div key={i} className="logo-cell">
+                <img
+                  src={`/fintechatuw/company_logos/${logo}`}
+                  alt={logo}
+                  className="logo-img"
+                  loading="lazy"
+                  decoding="async"
+                  onLoad={handleLogoLoad}
+                />
+              </div>
             ))}
           </div>
         </div>
