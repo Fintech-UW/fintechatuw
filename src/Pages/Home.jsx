@@ -20,8 +20,10 @@ export default function Home() {
     "oliver-wyman.png",
     "PwC.png",
     "kpmg.png",
+    "American-Express.png",
     "allianz.png",
     "c-1-logo.png",
+    "IBM.png",
     "munich.png",
     "aon.png",
     "milliman.png",
@@ -75,7 +77,7 @@ export default function Home() {
 
       <section
         style={{
-          backgroundImage: `url('/fintechatuw/mogridgeCover.png')`,
+          backgroundImage: `url('/fintechatuw/coverImage.png')`,
           width: "100%",
           height: "100vh",
           backgroundSize: "cover",
