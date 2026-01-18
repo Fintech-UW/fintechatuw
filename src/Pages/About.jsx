@@ -2,6 +2,10 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const About = () => {
+  const baseUrl = import.meta.env.BASE_URL ?? "/";
+  const sponsorshipPacketUrl = `${baseUrl}docs/sponsorship_packet.pdf`;
+  const sponsorshipPacketDisplayUrl = `${sponsorshipPacketUrl}#toolbar=0&navpanes=0`;
+
   return (
     <main className="min-h-screen bg-gray-50 text-gray-800">
          {/* NAV (always white, shadow, blue Join) */}
@@ -102,6 +106,33 @@ const About = () => {
           </div>
         </div>
       </section>
+
+      {/* Sponsorship Packet */}
+      <section className="max-w-5xl mx-auto px-6 pb-20">
+        <h2 className="text-3xl font-semibold mb-6 text-center">Corporate Sponsorship Packet</h2>
+        <iframe
+          src={sponsorshipPacketDisplayUrl}
+          title="FinTech@UW Corporate Sponsorship Packet"
+          className="w-full h-[720px] border rounded-xl shadow-md bg-white"
+          style={{
+              border: "solid 1px #777",
+              borderRadius: "16px",
+              boxShadow: "0 4px 20px rgba(213, 0, 0, 0.3)",
+              maxWidth: "100%",
+            }}
+        />
+        <p className="text-sm text-gray-600 mt-4">
+          <a
+            href={sponsorshipPacketUrl}
+            target="_blank"
+            rel="noreferrer"
+            className="text-blue-600 underline"
+          >
+            Download the PDF
+          </a>
+        </p>
+      </section>
+
 
       {/* Footer Content */}
       <section>
