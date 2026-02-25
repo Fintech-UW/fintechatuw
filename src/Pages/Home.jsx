@@ -37,20 +37,8 @@ export default function Home() {
     "TDS.png",
     "Skyward.png",
     "m3.png",
+    "cardinal_health.png"
   ];
-
-  // Boost square-ish logos slightly to reduce perceived whitespace
-  const handleLogoLoad = (e) => {
-    const img = e.currentTarget;
-    const w = img.naturalWidth || 0;
-    const h = img.naturalHeight || 0;
-    if (w && h) {
-      const ratio = w / h;
-      if (ratio < 1.2) {
-        img.classList.add("squareish");
-      }
-    }
-  };
 
   return (
     <main className="overflow-x-hidden">
@@ -66,12 +54,11 @@ export default function Home() {
           .nav-strip { overflow: visible !important; white-space: normal !important; }
         }
 
-        /* Offer wheel logo sizing: uniform cells for consistent gaps */
-        .logo-cell { display: inline-flex; align-items: center; justify-content: center; width: 120px; height: 64px; overflow: hidden; }
-        @media (min-width: 640px) { .logo-cell { width: 160px; height: 80px; } }
-        @media (min-width: 768px) { .logo-cell { width: 200px; height: 96px; } }
-        .logo-img { width: 100%; height: 100%; object-fit: contain; }
-        .logo-img.squareish { transform: scale(1.15); transform-origin: center; }
+        /* Offer wheel logo sizing: fixed height + auto width to keep visible spacing consistent */
+        .logo-cell { display: inline-flex; align-items: center; justify-content: center; height: 64px; flex: 0 0 auto; }
+        @media (min-width: 640px) { .logo-cell { height: 80px; } }
+        @media (min-width: 768px) { .logo-cell { height: 96px; } }
+        .logo-img { height: 100%; width: auto; max-width: clamp(120px, 18vw, 220px); display: block; object-fit: contain; }
 
       `}</style>
 
@@ -239,7 +226,6 @@ export default function Home() {
                   className="logo-img"
                   loading="lazy"
                   decoding="async"
-                  onLoad={handleLogoLoad}
                 />
               </div>
             ))}
