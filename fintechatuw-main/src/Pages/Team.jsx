@@ -377,6 +377,45 @@ const Team = () => {
         <h2 className="text-3xl font-semibold mb-2">Finance Committee</h2>
         <p className="text-gray-600 mb-8">The Finance Committee oversees budgeting, fundraising, and financial education initiatives.</p>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12">
+          {/* Benjie */}
+          <div className="bg-white rounded-xl shadow-md p-6 text-center hover:shadow-lg transition"
+            onClick={() => setSelectedMember(selectedMember === "Benjie" ? null : "Benjie")}
+          >
+            <img
+              src="/fintechatuw/e-board_images/Benjie Harthun.png"
+              alt="Benjie Harthun"
+              className="w-32 h-32 mx-auto rounded-full object-cover mb-4"
+            />
+            <h3 className="text-xl font-semibold">Benjie Harthun</h3>
+            <p className="text-sm text-gray-500">VP of Finance</p>
+            <p className="mt-2 text-sm">
+              Hi, my name is Benjie, and I’m a sophomore. I am passionate about bridging the gap between data science and finance, using tools like Python and R to uncover insights in everything from markets to sports analytics.
+            </p>
+            <p className="text-red-500 font-bold">
+              Click to learn more about me!
+            </p>
+            {selectedMember === "Benjie" && (
+              <div className="mt-4 text-sm text-gray-600 space-y-2">
+                <p>Major: Computer Science, Economics, Data Science </p>
+                <p>Hobbies: Running, Sports Leagues </p>
+                <a
+                  href="https://www.linkedin.com/in/benjie-harthun/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-blue-500 hover:underline"
+                >
+                    Visit Benjie's LinkedIn
+                </a>
+                <br />
+                <a
+                  href="https://outlook.office.com/mail/deeplink/compose?to=bharthun@wisc.edu" target="_blank"
+                  className="text-blue-500 hover:underline"
+                >
+                  Email Benjie
+                </a>
+              </div>
+            )}
+          </div>
           {/* Nate */}
           <div className="bg-white rounded-xl shadow-md p-6 text-center hover:shadow-lg transition"
             onClick={() => setSelectedMember(selectedMember === "Nate" ? null : "Nate")}
