@@ -1,0 +1,109 @@
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 14rem;
+    padding-left: 120px;
+    margin-top: 120px;
+}
+
+.footer-inside {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-inside-right {
+    display: flex;
+    flex-direction: column;
+    margin-top: -9px;
+}
+
+#text {
+    margin: 30px;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 18px;
+}
+
+#text-email {
+    margin: 30px;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 18px;
+}
+
+#text-club-name {
+    margin: 30px;
+    letter-spacing: 2px;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 22px;
+}
+
+#text-padding-bottom {
+    margin: 30px;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 18px;
+    margin-top: 32px;   /* fixed typo */
+    padding-bottom: 100px;
+}
+
+#instagram-logo {
+    max-width: 40px;
+    display: inline-block;
+}
+#linkedin-logo {
+    max-width: 35px;
+    display: inline-block;
+}
+
+.logo-container {
+    display: inline-block;
+}
+
+/* ===== MOBILE ONLY (<= 640px) ===== */
+@media (max-width: 640px) {
+  .footer {
+    width: 100vw;                 /* no overflow */
+    margin: 0;
+    padding: 0 12px;              /* safe side padding */
+    display: grid;
+    grid-template-columns: 1fr auto; /* left grows, right fits */
+    column-gap: 12px;
+    row-gap: 6px;
+    font-size: 12px;
+    line-height: 1.25;
+    box-sizing: border-box;
+    align-items: start;           /* align rows neatly */
+  }
+
+  /* Normalize spacing/size for all footer lines on mobile */
+  #text,
+  #text-email,
+  #text-club-name,
+  #text-padding-bottom {
+    margin: 12px 0;
+    font-size: 12px;
+  }
+
+  /* Remove the desktop-only extra padding from "Resources" */
+  #text-padding-bottom {
+    padding-bottom: 0;
+    margin-bottom: 12px;          /* simple, consistent spacing */
+  }
+
+  /* Small, consistent icons */
+  #linkedin-logo,
+  #instagram-logo {
+    width: 16px !important;
+    height: 16px !important;
+    display: block;
+  }
+
+  .logo-container {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  /* Let the address wrap; avoids pushing icons off-screen */
+  .location-text { white-space: normal; }
+}
+
