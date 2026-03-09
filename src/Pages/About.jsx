@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import AuthNavItems from "../components/AuthNavItems";
 
 const About = () => {
   const baseUrl = import.meta.env.BASE_URL ?? "/";
@@ -46,6 +47,7 @@ const About = () => {
                    <li className="shrink-0">
                      <Link to="/team" className="hover:opacity-80">The Team</Link>
                    </li>
+                   <AuthNavItems />
    
                    {/* Desktop Join */}
                       <li className="hidden md:block shrink-0">

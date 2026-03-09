@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./footer_styles.css";
+import AuthNavItems from "../components/AuthNavItems";
 
 const Events = () => {
   return (
@@ -44,6 +45,7 @@ const Events = () => {
                 <li className="shrink-0">
                   <Link to="/team" className="hover:opacity-80">The Team</Link>
                 </li>
+                <AuthNavItems />
 
                 {/* Desktop Join */}
                       <li className="hidden md:block shrink-0">
