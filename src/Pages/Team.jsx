@@ -457,6 +457,45 @@ const Team = () => {
               </div>
             )}
           </div>
+           {/* Benjie */}
+          <div className="bg-white rounded-xl shadow-md p-6 text-center hover:shadow-lg transition"
+           onClick={() => setSelectedMember(selectedMember === "Benjie" ? null : "Benjie")}
+          >
+            <img
+              src="/fintechatuw/e-board_images/Benjie.png"
+              alt="Benjie Harthun"
+              className="w-32 h-32 mx-auto rounded-full object-cover mb-4"
+            />
+            <h3 className="text-xl font-semibold">Benjie Harthun</h3>
+            <p className="text-sm text-gray-500">Chair of Finance</p>
+            <p className="mt-2 text-sm">
+              Hi, my name is Benjie, and I’m a sophomore. I am passionate about using data-driven models to improve financial decision-making.
+            </p>
+            <p className="text-red-500 font-bold">
+              Click to learn more about me!
+            </p>
+            {selectedMember === "Benjie" && (
+              <div className="mt-4 text-sm text-gray-600 space-y-2">
+                <p>Major: Computer Science, Economics, Data Science</p>
+                <p>Hobbies: Running, Watching Sports, Pickleball</p>
+                <a
+                  href="https://www.linkedin.com/in/benjie-harthun/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-blue-500 hover:underline"
+                >
+                    Visit Benjie's LinkedIn
+                </a>
+                <br />
+                <a
+                  href="https://outlook.office.com/mail/deeplink/compose?to=bhartun@wisc.edu" target="_blank"
+                  className="text-blue-500 hover:underline"
+                >
+                  Email Benjie
+                </a>
+              </div>
+            )}
+          </div>
         </div>
       </section>
 
