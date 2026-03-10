@@ -100,7 +100,7 @@ const Resources = () => {
 
           <div className="bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition">
             <h3 className="text-xl font-semibold mb-2">Credit & Consumer Apps</h3>
-            <p className="text-sm mb-3">Understand credit scoring systems and personal finance tools like Mint and Credit Karma.</p>
+            <p className="text-sm mb-3">Understand credit scoring systems and finance tools like Mint and Credit Karma.</p>
             <a href="https://www.consumerfinance.gov/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline text-sm">
               View Resource →
             </a>
