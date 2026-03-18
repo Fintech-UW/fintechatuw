@@ -13,7 +13,7 @@ const Events = () => {
             {/* Left: brand */}
             <Link to="/" className="flex items-center gap-3 min-w-0 flex-none">
               <img
-                src="/fintechatuw/fintech-at-uw-logo.png"
+                src="/fintech-at-uw-logo.png"
                 alt="Fintech Logo"
                 className="w-10 h-auto sm:w-12 shrink-0"
               />
@@ -116,7 +116,7 @@ const Events = () => {
                   rel="noreferrer"
                 >
                   <img
-                    src="/fintechatuw/socials-images/linkedin.png"
+                    src="/socials-images/linkedin.png"
                     id="linkedin-logo"
                     alt="LinkedIn"
                   />
@@ -127,7 +127,7 @@ const Events = () => {
                   rel="noreferrer"
                 >
                   <img
-                    src="/fintechatuw/socials-images/instagram.png"
+                    src="/socials-images/instagram.png"
                     id="instagram-logo"
                     alt="Instagram"
                   />

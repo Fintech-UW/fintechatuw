@@ -14,7 +14,7 @@ const Team = () => {
                   {/* Left: brand */}
                   <Link to="/" className="flex items-center gap-3 min-w-0 flex-none">
                     <img
-                      src="/fintechatuw/fintech-at-uw-logo.png"
+                      src="/fintech-at-uw-logo.png"
                       alt="Fintech Logo"
                       className="w-10 h-auto sm:w-12 shrink-0"
                     />
@@ -91,7 +91,7 @@ const Team = () => {
             onClick={() => setSelectedMember(selectedMember === "conan" ? null : "conan")}
           >
             <img
-              src="/fintechatuw/e-board_images/CL.png"
+              src="/e-board_images/CL.png"
               alt="Conan Le"
               className="w-32 h-32 mx-auto rounded-full object-cover object-center mb-4"
             />
@@ -133,7 +133,7 @@ const Team = () => {
             onClick={() => setSelectedMember(selectedMember === "Jiapeng" ? null : "Jiapeng")}
           >
             <img
-              src="/fintechatuw/e-board_images/JP.png"
+              src="/e-board_images/JP.png"
               alt="Jiapeng Zheng"
               className= "w-32 h-32 mx-auto rounded-full object-cover object-center"
             />
@@ -173,7 +173,7 @@ const Team = () => {
            onClick={() => setSelectedMember(selectedMember === "Angel" ? null : "Angel")}
           >
             <img
-              src="/fintechatuw/e-board_images/angel morales.png"
+              src="/e-board_images/angel morales.png"
               alt="Angel Morales"
               className="w-32 h-32 mx-auto rounded-full object-cover object-center mb-4"
             />
@@ -212,7 +212,7 @@ const Team = () => {
            onClick={() => setSelectedMember(selectedMember === "Sara" ? null : "Sara")}
           >
             <img
-              src="/fintechatuw/e-board_images/sara rodock.png"
+              src="/e-board_images/sara rodock.png"
               alt="Sara Rodock"
               className="w-32 h-32 mx-auto rounded-full object-cover mb-4"
             />
@@ -258,7 +258,7 @@ const Team = () => {
             onClick={() => setSelectedMember(selectedMember === "Saul" ? null : "Saul")}
           >
             <img
-              src="/fintechatuw/e-board_images/saul orbe.jpeg"
+              src="/e-board_images/saul orbe.jpeg"
               alt="Saul Orbe"
               className="w-32 h-32 mx-auto rounded-full object-cover mb-4"
             />
@@ -297,7 +297,7 @@ const Team = () => {
            onClick={() => setSelectedMember(selectedMember === "Anish" ? null : "Anish")}
           >
             <img
-              src="/fintechatuw/e-board_images/anish mantri.png"
+              src="/e-board_images/anish mantri.png"
               alt="Anish Mantri"
               className="w-32 h-32 mx-auto rounded-full object-cover mb-4"
             />
@@ -336,7 +336,7 @@ const Team = () => {
            onClick={() => setSelectedMember(selectedMember === "Michael" ? null : "Michael")}
           >
             <img
-              src="/fintechatuw/e-board_images/michael tang.png"
+              src="/e-board_images/michael tang.png"
               alt="Michael Tang"
               className="w-32 h-32 mx-auto rounded-full object-cover mb-4"
             />
@@ -384,7 +384,7 @@ const Team = () => {
             onClick={() => setSelectedMember(selectedMember === "Nate" ? null : "Nate")}
           >
             <img
-              src="/fintechatuw/e-board_images/nate twente.png"
+              src="/e-board_images/nate twente.png"
               alt="Nate Twente"
               className="w-32 h-32 mx-auto rounded-full object-cover mb-4"
             />
@@ -423,7 +423,7 @@ const Team = () => {
            onClick={() => setSelectedMember(selectedMember === "Bryant" ? null : "Bryant")}
           >
             <img
-              src="/fintechatuw/e-board_images/bryant wright.png"
+              src="/e-board_images/bryant wright.png"
               alt="Bryant Wright"
               className="w-32 h-32 mx-auto rounded-full object-cover mb-4"
             />
@@ -462,7 +462,7 @@ const Team = () => {
            onClick={() => setSelectedMember(selectedMember === "Benjie" ? null : "Benjie")}
           >
             <img
-              src="/fintechatuw/e-board_images/Benjie.png"
+              src="/e-board_images/Benjie.png"
               alt="Benjie Harthun"
               className="w-32 h-32 mx-auto rounded-full object-cover mb-4"
             />
@@ -509,7 +509,7 @@ const Team = () => {
             onClick={() => setSelectedMember(selectedMember === "Brody" ? null : "Brody")}
           >
             <img
-              src="/fintechatuw/e-board_images/brody kerscher.png"
+              src="/e-board_images/brody kerscher.png"
               alt="Brody"
               className="w-32 h-32 mx-auto rounded-full object-cover mb-4"
             />
@@ -548,7 +548,7 @@ const Team = () => {
            onClick={() => setSelectedMember(selectedMember === "Genaro" ? null : "Genaro")}
           >
             <img
-              src="/fintechatuw/e-board_images/genaro camas.png"
+              src="/e-board_images/genaro camas.png"
               alt="Genaro Camas"
               className="w-32 h-32 mx-auto rounded-full object-cover mb-4"
             />
@@ -587,7 +587,7 @@ const Team = () => {
            onClick={() => setSelectedMember(selectedMember === "Carter" ? null : "Carter")}
           >
             <img
-              src="/fintechatuw/e-board_images/carter fellows.png"
+              src="/e-board_images/carter fellows.png"
               alt="Carter Fellows"
               className="w-32 h-32 mx-auto rounded-full object-cover mb-4"
             />
@@ -636,7 +636,7 @@ const Team = () => {
             onClick={() => setSelectedMember(selectedMember === "Arnav" ? null : "Arnav")}
           >
             <img
-              src="/fintechatuw/e-board_images/arnav gupta.png"
+              src="/e-board_images/arnav gupta.png"
               alt="Brody"
               className="w-32 h-32 mx-auto rounded-full object-cover mb-4"
             />
@@ -675,7 +675,7 @@ const Team = () => {
            onClick={() => setSelectedMember(selectedMember === "Dora" ? null : "Dora")}
           >
             <img
-              src="/fintechatuw/e-board_images/dora tsai.png"
+              src="/e-board_images/dora tsai.png"
               alt="Dora Tsai"
               className="w-32 h-32 mx-auto rounded-full object-cover mb-4"
             />
@@ -713,7 +713,7 @@ const Team = () => {
            onClick={() => setSelectedMember(selectedMember === "Eli" ? null : "Eli")}
           >
             <img
-              src="/fintechatuw/e-board_images/eli olson.png"
+              src="/e-board_images/eli olson.png"
               alt="Eli Olson"
               className="w-32 h-32 mx-auto rounded-full object-cover mb-4"
             />
@@ -768,10 +768,10 @@ const Team = () => {
               <span className="location-text">Madison, Wisconsin 53706</span>
               <span className="logo-container">
                 <a href="https://www.linkedin.com/company/fintech-uw/" target="_blank" rel="noreferrer">
-                  <img src="/fintechatuw/socials-images/linkedin.png" id="linkedin-logo" />
+                  <img src="/socials-images/linkedin.png" id="linkedin-logo" />
                 </a>
                 <a href="https://www.instagram.com/fintechuw/" target="_blank" rel="noreferrer">
-                  <img src="/fintechatuw/socials-images/instagram.png" id="instagram-logo" />
+                  <img src="/socials-images/instagram.png" id="instagram-logo" />
                 </a>
               </span>
             </p>

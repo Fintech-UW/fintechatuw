@@ -65,7 +65,7 @@ export default function Home() {
 
       <section
         style={{
-          backgroundImage: `url('/fintechatuw/coverImage.png')`,
+          backgroundImage: `url('/coverImage.png')`,
           width: "100%",
           height: "100vh",
           backgroundSize: "cover",
@@ -86,7 +86,7 @@ export default function Home() {
               {/* Left: brand */}
               <Link to="/" className="flex items-center gap-3 min-w-0 flex-none">
                 <img
-                  src="/fintechatuw/fintech-at-uw-logo.png"
+                  src="/fintech-at-uw-logo.png"
                   alt="Fintech Logo"
                   className="w-10 h-auto sm:w-12 shrink-0"
                 />
@@ -223,7 +223,7 @@ export default function Home() {
             {[...logosOrdered, ...logosOrdered].map((logo, i) => (
               <div key={i} className="logo-cell">
                 <img
-                  src={`/fintechatuw/company_logos/${logo}`}
+                  src={`/company_logos/${logo}`}
                   alt={logo}
                   className="logo-img"
                   loading="lazy"
@@ -255,8 +255,8 @@ export default function Home() {
                   <p id="text">
                     <span className="location-text">Madison, Wisconsin 53706       </span> {/* Added whitespace to improve appearance */}
                     <span className="logo-container">
-                      <a href="https://www.linkedin.com/company/fintech-uw/" target="_blank"><img src="/fintechatuw/socials-images/linkedin.png" id="linkedin-logo" /></a>
-                      <a href="https://www.instagram.com/fintechuw/" target="_blank"><img src="/fintechatuw/socials-images/instagram.png" id="instagram-logo" /></a>
+                      <a href="https://www.linkedin.com/company/fintech-uw/" target="_blank"><img src="/socials-images/linkedin.png" id="linkedin-logo" /></a>
+                      <a href="https://www.instagram.com/fintechuw/" target="_blank"><img src="/socials-images/instagram.png" id="instagram-logo" /></a>
                     </span>
                   </p>   
                 </div>

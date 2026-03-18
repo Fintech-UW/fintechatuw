@@ -90,7 +90,7 @@ const Login = () => {
           <div className="flex h-14 sm:h-16 items-center gap-3">
             <Link to="/" className="flex items-center gap-3 min-w-0 flex-none">
               <img
-                src="/fintechatuw/fintech-at-uw-logo.png"
+                src="/fintech-at-uw-logo.png"
                 alt="Fintech Logo"
                 className="w-10 h-auto sm:w-12 shrink-0"
               />
