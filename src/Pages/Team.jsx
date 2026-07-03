@@ -2,242 +2,159 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import AuthNavItems from "../components/AuthNavItems";
 
-
 const Team = () => {
   const [selectedMember, setSelectedMember] = useState(null);
+
   return (
     <main className="min-h-screen bg-gray-50 text-gray-800">
-            {/* NAV (always white, shadow, blue Join) */}
-            <nav className="fixed w-full top-0 z-50 bg-white shadow-md text-black">
-              <div className="max-w-7xl mx-auto px-3 sm:px-4">
-                <div className="flex h-14 sm:h-16 items-center gap-3">
-                  {/* Left: brand */}
-                  <Link to="/" className="flex items-center gap-3 min-w-0 flex-none">
-                    <img
-                      src="/fintech-at-uw-logo.png"
-                      alt="Fintech Logo"
-                      className="w-10 h-auto sm:w-12 shrink-0"
-                    />
-                    <div className="min-w-0">
-                      <h1 className="text-base sm:text-lg font-bold truncate">FinTech@UW</h1>
-                    </div>
-                  </Link>
-      
-                  {/* Middle/Right: links */}
-                  <div className="min-w-0 flex-1">
-                    <ul
-                      className="
-                        nav-strip
-                        flex items-center gap-4 sm:gap-6 font-medium text-sm sm:text-base
-                        overflow-x-auto no-scrollbar whitespace-nowrap
-                        md:justify-end
-                      "
-                    >
-                      <li className="shrink-0">
-                        <Link to="/about" className="hover:opacity-80">About</Link>
-                      </li>
-                      <li className="shrink-0">
-                        <Link to="/events" className="hover:opacity-80">Events</Link>
-                      </li>
-                      <li className="shrink-0">
-                        <Link to="/resources" className="hover:opacity-80">Resources</Link>
-                      </li>
-                      <li className="shrink-0">
-                        <Link to="/team" className="hover:opacity-80">The Team</Link>
-                      </li>
-                      <AuthNavItems />
-      
-                      {/* Desktop Join */}
-                      <li className="hidden md:block shrink-0">
-                        <a
-                          href="https://linktr.ee/fintechuw?fbclid=PAZXh0bgNhZW0CMTEAAadsdHIdE-4ELJo7VeVNAS-uGD8GcrQOas6_JTAtlrDkqbIgwefiHT-LNhZ5bw_aem_ybNM8nOQMb0hocVQXjWqeg"
-                          className="inline-block px-4 py-2 rounded-full bg-blue-600 text-white hover:bg-blue-700 transition"
-                        >
-                          Join
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-      
-                  {/* Mobile Join */}
-                  <div className="flex-none md:hidden">
-                    <a
-                      href="https://linktr.ee/fintechuw?fbclid=PAZXh0bgNhZW0CMTEAAadsdHIdE-4ELJo7VeVNAS-uGD8GcrQOas6_JTAtlrDkqbIgwefiHT-LNhZ5bw_aem_ybNM8nOQMb0hocVQXjWqeg"
-                      className="inline-block px-3 py-1.5 rounded-full bg-blue-600 text-white hover:bg-blue-700 transition text-sm"
-                    >
-                      Join
-                    </a>
-                  </div>
-                </div>
+      {/* NAV (always white, shadow, blue Join) */}
+      <nav className="fixed w-full top-0 z-50 bg-white shadow-md text-black">
+        <div className="max-w-7xl mx-auto px-3 sm:px-4">
+          <div className="flex h-14 sm:h-16 items-center gap-3">
+            {/* Left: brand */}
+            <Link to="/" className="flex items-center gap-3 min-w-0 flex-none">
+              <img
+                src="/fintech-at-uw-logo.png"
+                alt="Fintech Logo"
+                className="w-10 h-auto sm:w-12 shrink-0"
+              />
+              <div className="min-w-0">
+                <h1 className="text-base sm:text-lg font-bold truncate">FinTech@UW</h1>
               </div>
-            </nav>
+            </Link>
+
+            {/* Middle/Right: links */}
+            <div className="min-w-0 flex-1">
+              <ul
+                className="
+                  nav-strip
+                  flex items-center gap-4 sm:gap-6 font-medium text-sm sm:text-base
+                  overflow-x-auto no-scrollbar whitespace-nowrap
+                  md:justify-end
+                "
+              >
+                <li className="shrink-0">
+                  <Link to="/about" className="hover:opacity-80">About</Link>
+                </li>
+                <li className="shrink-0">
+                  <Link to="/events" className="hover:opacity-80">Events</Link>
+                </li>
+                <li className="shrink-0">
+                  <Link to="/resources" className="hover:opacity-80">Resources</Link>
+                </li>
+                <li className="shrink-0">
+                  <Link to="/team" className="hover:opacity-80">The Team</Link>
+                </li>
+                <AuthNavItems />
+
+                {/* Desktop Join */}
+                <li className="hidden md:block shrink-0">
+                  <a
+                    href="https://linktr.ee/fintechuw?fbclid=PAZXh0bgNhZW0CMTEAAadsdHIdE-4ELJo7VeVNAS-uGD8GcrQOas6_JTAtlrDkqbIgwefiHT-LNhZ5bw_aem_ybNM8nOQMb0hocVQXjWqeg"
+                    className="inline-block px-4 py-2 rounded-full bg-blue-600 text-white hover:bg-blue-700 transition"
+                  >
+                    Join
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            {/* Mobile Join */}
+            <div className="flex-none md:hidden">
+              <a
+                href="https://linktr.ee/fintechuw?fbclid=PAZXh0bgNhZW0CMTEAAadsdHIdE-4ELJo7VeVNAS-uGD8GcrQOas6_JTAtlrDkqbIgwefiHT-LNhZ5bw_aem_ybNM8nOQMb0hocVQXjWqeg"
+                className="inline-block px-3 py-1.5 rounded-full bg-blue-600 text-white hover:bg-blue-700 transition text-sm"
+              >
+                Join
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
 
       {/* Page heading */}
       <section className="text-center py-16 px-4 mt-32">
         <h1 className="text-5xl font-bold mb-4">Meet The Team</h1>
         <p className="text-lg max-w-2xl mx-auto">
-          We're a team of passionate students driving the future of FinTech at UW–Madison.
+          We're a team of passionate students driving the future of FinTech at UW-Madison.
         </p>
       </section>
 
-      {/* Leadership Committee  */}
+      {/* Leadership Committee */}
       <section className="max-w-6xl mx-auto px-6 pb-16">
         <h2 className="text-3xl font-semibold mb-2">Leadership Committee</h2>
-        <p className="text-gray-600 mb-8">The Leadership Committee oversees the club's vision, long-term goals, and foundational decisions.</p>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
-          {/* Conan Le */}
-          <div 
+        <p className="text-gray-600 mb-8">
+          The Leadership Committee oversees the club's vision, long-term goals, and foundational decisions.
+        </p>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+          {/* Anish Mantri */}
+          <div
             className="bg-white rounded-xl shadow-md p-6 text-center hover:shadow-lg transition"
-            onClick={() => setSelectedMember(selectedMember === "conan" ? null : "conan")}
+            onClick={() => setSelectedMember(selectedMember === "Anish" ? null : "Anish")}
           >
             <img
-              src="/e-board_images/CL.png"
-              alt="Conan Le"
+              src="/e-board_images/Mantri_Anish.png"
+              alt="Anish Mantri"
               className="w-32 h-32 mx-auto rounded-full object-cover object-center mb-4"
             />
-            <h3 className="text-xl font-semibold">Conan Le</h3>
-            <p className="text-sm text-gray-500">Co-President</p>
+            <h3 className="text-xl font-semibold">Anish Mantri</h3>
+            <p className="text-sm text-gray-500">President</p>
             <p className="mt-2 text-sm">
-            Hi! My name is Conan, and I’m a junior. During my actuarial internship at Northwestern Mutual, I developed a passion for using financial data to drive decision-making.
-            <p className="text-red-500 font-bold">
-              Click to learn more about me!
+              Hi, my name is Anish, and I'm a junior. I am passionate about using technology to predict financial markets.
             </p>
-            </p>
-            {selectedMember === "conan" && (
+            <p className="text-red-500 font-bold">Click to learn more about me!</p>
+            {selectedMember === "Anish" && (
               <div className="mt-4 text-sm text-gray-600 space-y-2">
-               <p>Majors: Actuarial Science, Finance, and Risk Management & Insurance</p>
-               <p>Hobbies: Lifting, Hiking, Classical Piano</p>
-               <a
-                  href="https://www.linkedin.com/in/conanle13/"
+                <p>Majors: Computer Science, Data Science</p>
+                <p>Hobbies: Sports, Lifting, Gaming</p>
+                <a
+                  href="https://www.linkedin.com/in/anishmantri/"
                   target="_blank"
                   rel="noreferrer"
                   className="text-blue-500 hover:underline"
                 >
-                    Visit Conan's LinkedIn
+                  Visit Anish's LinkedIn
                 </a>
                 <br />
                 <a
-                  href="https://outlook.office.com/mail/deeplink/compose?to=cyle2@wisc.edu" target="_blank"
+                  href="https://outlook.office.com/mail/deeplink/compose?to=agmantri@wisc.edu"
+                  target="_blank"
                   className="text-blue-500 hover:underline"
                 >
-                  Email Conan
+                  Email Anish
                 </a>
-                
-          
               </div>
             )}
           </div>
 
-          {/* Jiapeng Zheng */}
-          <div className="bg-white rounded-xl shadow-md p-6 text-center hover:shadow-lg transition"
-            onClick={() => setSelectedMember(selectedMember === "Jiapeng" ? null : "Jiapeng")}
-          >
-            <img
-              src="/e-board_images/JP.png"
-              alt="Jiapeng Zheng"
-              className= "w-32 h-32 mx-auto rounded-full object-cover object-center"
-            />
-            <h3 className="text-xl font-semibold">Jiapeng Zheng</h3>
-            <p className="text-sm text-gray-500">Co-President</p>
-            <p className="mt-2 text-sm">
-            Hey, I’m Jp, and I’m a junior. Through my internship at Northwestern Mutual, I have grown to love expanding my knowledge of fintech.
-            </p>
-            <p className="text-red-500 font-bold">
-              Click to learn more about me!
-            </p>
-            {selectedMember === "Jiapeng" && (
-              <div className="mt-4 text-sm text-gray-600 space-y-2">
-                <p>Majors: Finance and Risk Mangement</p>
-                <p>Hobbies: Gambling, Lifting, Sports</p>
-                <a
-                  href="https://www.linkedin.com/in/jiapengzheng/"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="text-blue-500 hover:underline"
-                >
-                    Visit JP's LinkedIn
-                </a>
-                <br />
-                <a
-                  href="https://outlook.office.com/mail/deeplink/compose?to=jzheng272@wisc.edu" target="_blank"
-                  className="text-blue-500 hover:underline"
-                >
-                  Email JP
-                </a>
-
-              </div>
-            )}
-          </div>
-          {/* Angel */}
-          <div className="bg-white rounded-xl shadow-md p-6 text-center hover:shadow-lg transition"
-           onClick={() => setSelectedMember(selectedMember === "Angel" ? null : "Angel")}
-          >
-            <img
-              src="/e-board_images/angel morales.png"
-              alt="Angel Morales"
-              className="w-32 h-32 mx-auto rounded-full object-cover object-center mb-4"
-            />
-            <h3 className="text-xl font-semibold">Angel Morales</h3>
-            <p className="text-sm text-gray-500">Mr. Meta</p>
-            <p className="mt-2 text-sm">
-              Hi, my name is Angel, and I’m a junior. Through my time at Meta, I have become passionate about AI and its applications in finance.
-            </p>
-            <p className="text-red-500 font-bold">
-              Click to learn more about me!
-            </p>
-            {selectedMember === "Angel" && (
-              <div className="mt-4 text-sm text-gray-600 space-y-2">
-                <p>Major: Computer Science</p>
-                <p>Hobbies: Gaming, AI, and Coding</p>
-                <a
-                  href="https://www.linkedin.com/in/angelmorales0/"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="text-blue-500 hover:underline"
-                >
-                    Visit Angel's LinkedIn
-                </a>
-                <br />
-                <a
-                  href="https://outlook.office.com/mail/deeplink/compose?to=admorales3@wisc.edu" target="_blank"
-                  className="text-blue-500 hover:underline"
-                >
-                  Email Angel
-                </a>
-              </div>
-            )}
-          </div>
           {/* Sara Rodock */}
-          <div className="bg-white rounded-xl shadow-md p-6 text-center hover:shadow-lg transition"
-           onClick={() => setSelectedMember(selectedMember === "Sara" ? null : "Sara")}
+          <div
+            className="bg-white rounded-xl shadow-md p-6 text-center hover:shadow-lg transition"
+            onClick={() => setSelectedMember(selectedMember === "Sara" ? null : "Sara")}
           >
             <img
-              src="/e-board_images/sara rodock.png"
+              src="/e-board_images/Rodock_Sara.png"
               alt="Sara Rodock"
               className="w-32 h-32 mx-auto rounded-full object-cover mb-4"
             />
             <h3 className="text-xl font-semibold">Sara Rodock</h3>
             <p className="text-sm text-gray-500">Advisor</p>
-            <p className="mt-2 text-sm">
-              Hi, my name is Sara, and I’m the club advisor. 
-            </p>
-            <p className="text-red-500 font-bold">
-              Click to learn more about me!
-            </p>
+            <p className="mt-2 text-sm">Hi, my name is Sara, and I'm the club advisor.</p>
+            <p className="text-red-500 font-bold">Click to learn more about me!</p>
             {selectedMember === "Sara" && (
               <div className="mt-4 text-sm text-gray-600 space-y-2">
-                
                 <a
                   href="https://www.linkedin.com/in/sara-rodock-8a0a9132/"
                   target="_blank"
                   rel="noreferrer"
                   className="text-blue-500 hover:underline"
                 >
-                    Visit Sara's LinkedIn
+                  Visit Sara's LinkedIn
                 </a>
                 <br />
                 <a
-                  href="https://outlook.office.com/mail/deeplink/compose?to=rodock@wisc.edu" target="_blank"
+                  href="https://outlook.office.com/mail/deeplink/compose?to=rodock@wisc.edu"
+                  target="_blank"
                   className="text-blue-500 hover:underline"
                 >
                   Email Sara
@@ -248,250 +165,183 @@ const Team = () => {
         </div>
       </section>
 
-      {/* Tech Committee  */}
+      {/* Tech Committee */}
       <section className="max-w-6xl mx-auto px-6 pb-16">
         <h2 className="text-3xl font-semibold mb-2">Tech Committee</h2>
-        <p className="text-gray-600 mb-8">The Tech Committee builds and manages our digital tools, website, and internal systems.</p>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12">
-          {/* Saul */}
-          <div className="bg-white rounded-xl shadow-md p-6 text-center hover:shadow-lg transition"
-            onClick={() => setSelectedMember(selectedMember === "Saul" ? null : "Saul")}
+        <p className="text-gray-600 mb-8">
+          The Tech Committee builds and manages our digital tools, website, and internal systems.
+        </p>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-8">
+          {/* Christian Cortez */}
+          <div
+            className="bg-white rounded-xl shadow-md p-6 text-center hover:shadow-lg transition"
+            onClick={() => setSelectedMember(selectedMember === "Christian" ? null : "Christian")}
           >
             <img
-              src="/e-board_images/saul orbe.jpeg"
-              alt="Saul Orbe"
+              src="/e-board_images/Cortez_Christian.png"
+              alt="Christian Cortez"
               className="w-32 h-32 mx-auto rounded-full object-cover mb-4"
             />
-            <h3 className="text-xl font-semibold">Saul Orbe</h3>
+            <h3 className="text-xl font-semibold">Christian Cortez</h3>
             <p className="text-sm text-gray-500">VP of Technology</p>
             <p className="mt-2 text-sm">
-              Hi, my name is Saul, and I’m a junior. I am passionate about using technology to solve real-world problems and improve financial systems. 
+              Hi, my name is Christian, and I'm a junior. I am passionate about the intersection of
+              software engineering, data, and financial systems, and I'm especially excited by how
+              technology can make financial tools more efficient, accessible, and scalable.
             </p>
-            <p className="text-red-500 font-bold">
-              Click to learn more about me!
-            </p>
-            {selectedMember === "Saul" && (
-              <div className="mt-4 text-sm text-gray-600 space-y-2">
-                <p>Major: Computer Science </p>
-                <p>Hobbies: Gaming and Coding</p>
-                <a
-                  href="https://www.linkedin.com/in/orbe1/"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="text-blue-500 hover:underline"
-                >
-                    Visit Saul's LinkedIn
-                </a>
-                <br />
-                <a
-                  href="https://outlook.office.com/mail/deeplink/compose?to=orbe@wisc.edu" target="_blank"
-                  className="text-blue-500 hover:underline"
-                >
-                  Email Saul
-                </a>
-              </div>
-            )}
-          </div>
-          {/* Anish */}
-          <div className="bg-white rounded-xl shadow-md p-6 text-center hover:shadow-lg transition"
-           onClick={() => setSelectedMember(selectedMember === "Anish" ? null : "Anish")}
-          >
-            <img
-              src="/e-board_images/anish mantri.png"
-              alt="Anish Mantri"
-              className="w-32 h-32 mx-auto rounded-full object-cover mb-4"
-            />
-            <h3 className="text-xl font-semibold">Anish Mantri</h3>
-            <p className="text-sm text-gray-500">Chair of Technology</p>
-            <p className="mt-2 text-sm">
-              Hi, my name is Anish, and I'm a sophomore. I am passionate about using technology to predict financial markets.
-            </p>
-            <p className="text-red-500 font-bold">
-              Click to learn more about me!
-            </p>
-            {selectedMember === "Anish" && (
+            <p className="text-red-500 font-bold">Click to learn more about me!</p>
+            {selectedMember === "Christian" && (
               <div className="mt-4 text-sm text-gray-600 space-y-2">
                 <p>Major: Computer Science, Data Science</p>
-                <p>Hobbies: Sports, Lifting, Gaming</p>
+                <p>Hobbies: Building software projects, learning new backend skills, investing, soccer, cooking, working out</p>
                 <a
-                  href="https://www.linkedin.com/in/anishmantri/"
+                  href="https://www.linkedin.com/in/christian--cortez/"
                   target="_blank"
                   rel="noreferrer"
                   className="text-blue-500 hover:underline"
                 >
-                    Visit Anish's LinkedIn
+                  Visit Christian's LinkedIn
                 </a>
                 <br />
                 <a
-                  href="https://outlook.office.com/mail/deeplink/compose?to=agmantri@wisc.edu" target="_blank"
-                  className="text-blue-500 hover:underline"
-                >
-                  Email Anish
-                </a>
-              </div>
-            )}
-          </div>
-          {/* Micheal */}
-          <div className="bg-white rounded-xl shadow-md p-6 text-center hover:shadow-lg transition"
-           onClick={() => setSelectedMember(selectedMember === "Michael" ? null : "Michael")}
-          >
-            <img
-              src="/e-board_images/michael tang.png"
-              alt="Michael Tang"
-              className="w-32 h-32 mx-auto rounded-full object-cover mb-4"
-            />
-            <h3 className="text-xl font-semibold">Michael Tang</h3>
-            <p className="text-sm text-gray-500">Chair of Technology</p>
-            <p className="mt-2 text-sm">
-              Hi, my name is Michael, and I'm a junior. I am passionate about using machine learning to research finance.
-            </p>
-            <p className="text-red-500 font-bold">
-              Click to learn more about me!
-            </p>
-            {selectedMember === "Michael" && (
-              <div className="mt-4 text-sm text-gray-600 space-y-2">
-                <p>Major: Computer Science, Data Science</p>
-                <p>Hobbies: Trying new foods, Tennis, Basketball</p>
-                <a
-                  href="https://www.linkedin.com/in/michael-tang-76bab729a/"
+                  href="https://outlook.office.com/mail/deeplink/compose?to=ccortez6@wisc.edu"
                   target="_blank"
-                  rel="noreferrer"
                   className="text-blue-500 hover:underline"
                 >
-                    Visit Michael's LinkedIn
-                </a>
-                <br />
-                <a
-                  href="https://outlook.office.com/mail/deeplink/compose?to=mltang2@wisc.edu" target="_blank"
-                  className="text-blue-500 hover:underline"
-                >
-                  Email Michael
+                  Email Christian
                 </a>
               </div>
             )}
           </div>
 
+          {/* Ashley Lin */}
+          <div
+            className="bg-white rounded-xl shadow-md p-6 text-center hover:shadow-lg transition"
+            onClick={() => setSelectedMember(selectedMember === "Ashley" ? null : "Ashley")}
+          >
+            <img
+              src="/e-board_images/Lin_Ashley.png"
+              alt="Ashley Lin"
+              className="w-32 h-32 mx-auto rounded-full object-cover mb-4"
+            />
+            <h3 className="text-xl font-semibold">Ashley Lin</h3>
+            <p className="text-sm text-gray-500">Chair of Technology</p>
+            <p className="mt-2 text-sm">
+              Hi, my name is Ashley, and I'm a sophomore. I am interested in how full-stack
+              development and data analytics intersect, and I am passionate about building tools
+              that make personal finance and investing intuitive for everyone.
+            </p>
+            <p className="text-red-500 font-bold">Click to learn more about me!</p>
+            {selectedMember === "Ashley" && (
+              <div className="mt-4 text-sm text-gray-600 space-y-2">
+                <p>Major: Data Science, Computer Science</p>
+                <p>Hobbies: Baking, Going on Walks, Reading Deeply Moving Books</p>
+                <a
+                  href="https://www.linkedin.com/in/ashley-lin-56104b302/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-blue-500 hover:underline"
+                >
+                  Visit Ashley's LinkedIn
+                </a>
+                <br />
+                <a
+                  href="https://outlook.office.com/mail/deeplink/compose?to=alin77@wisc.edu"
+                  target="_blank"
+                  className="text-blue-500 hover:underline"
+                >
+                  Email Ashley
+                </a>
+              </div>
+            )}
+          </div>
         </div>
       </section>
 
-      {/* Finance Committee  */}
+      {/* Finance Committee */}
       <section className="max-w-6xl mx-auto px-6 pb-16">
         <h2 className="text-3xl font-semibold mb-2">Finance Committee</h2>
-        <p className="text-gray-600 mb-8">The Finance Committee oversees budgeting, fundraising, and financial education initiatives.</p>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12">
-          {/* Nate */}
-          <div className="bg-white rounded-xl shadow-md p-6 text-center hover:shadow-lg transition"
-            onClick={() => setSelectedMember(selectedMember === "Nate" ? null : "Nate")}
+        <p className="text-gray-600 mb-8">
+          The Finance Committee oversees budgeting, fundraising, and financial education initiatives.
+        </p>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-8">
+          {/* Tyler Hood */}
+          <div
+            className="bg-white rounded-xl shadow-md p-6 text-center hover:shadow-lg transition"
+            onClick={() => setSelectedMember(selectedMember === "Tyler" ? null : "Tyler")}
           >
             <img
-              src="/e-board_images/nate twente.png"
-              alt="Nate Twente"
+              src="/e-board_images/Hood_Tyler.png"
+              alt="Tyler Hood"
               className="w-32 h-32 mx-auto rounded-full object-cover mb-4"
             />
-            <h3 className="text-xl font-semibold">Nate Twente</h3>
+            <h3 className="text-xl font-semibold">Tyler Hood</h3>
             <p className="text-sm text-gray-500">VP of Finance</p>
             <p className="mt-2 text-sm">
-              Hi, my name is Nate, and I’m a junior. I am passionate about expanding student interest in financial literacy and technology.
+              Hi, my name is Tyler, and I'm a sophomore. I am passionate about the analytical and
+              technical side of business and leveraging systems to solve problems.
             </p>
-            <p className="text-red-500 font-bold">
-              Click to learn more about me!
-            </p>
-            {selectedMember === "Nate" && (
+            <p className="text-red-500 font-bold">Click to learn more about me!</p>
+            {selectedMember === "Tyler" && (
               <div className="mt-4 text-sm text-gray-600 space-y-2">
-                <p>Major: Acturial Science, Finance </p>
-                <p>Hobbies: Golfing, Running, Watching Sports</p>
+                <p>Major: Finance, Data Science</p>
+                <p>Hobbies: Guitar, food</p>
                 <a
-                  href="https://www.linkedin.com/in/nate-twente-39447822a/"
+                  href="http://linkedin.com/in/tylerhood1"
                   target="_blank"
                   rel="noreferrer"
                   className="text-blue-500 hover:underline"
                 >
-                    Visit Nate's LinkedIn
+                  Visit Tyler's LinkedIn
                 </a>
                 <br />
                 <a
-                  href="https://outlook.office.com/mail/deeplink/compose?to=ntwente@wisc.edu" target="_blank"
+                  href="https://outlook.office.com/mail/deeplink/compose?to=tjhood@wisc.edu"
+                  target="_blank"
                   className="text-blue-500 hover:underline"
                 >
-                  Email Nate
+                  Email Tyler
                 </a>
               </div>
             )}
           </div>
-          {/* Bryant */}
-          <div className="bg-white rounded-xl shadow-md p-6 text-center hover:shadow-lg transition"
-           onClick={() => setSelectedMember(selectedMember === "Bryant" ? null : "Bryant")}
+
+          {/* Frederick Deng */}
+          <div
+            className="bg-white rounded-xl shadow-md p-6 text-center hover:shadow-lg transition"
+            onClick={() => setSelectedMember(selectedMember === "Frederick" ? null : "Frederick")}
           >
             <img
-              src="/e-board_images/bryant wright.png"
-              alt="Bryant Wright"
+              src="/e-board_images/Deng_Frederick.png"
+              alt="Frederick Deng"
               className="w-32 h-32 mx-auto rounded-full object-cover mb-4"
             />
-            <h3 className="text-xl font-semibold">Bryant Wright</h3>
+            <h3 className="text-xl font-semibold">Frederick Deng</h3>
             <p className="text-sm text-gray-500">Chair of Finance</p>
             <p className="mt-2 text-sm">
-              Hi, my name is Bryant, and I'm a Junior. I am deeply interested in exploring the analytical aspects of finance.
+              Hi, my name is Frederick, and I'm a junior. I am interested in learning more about
+              the field of financial technology (and, admittedly, passionate about the free food).
             </p>
-            <p className="text-red-500 font-bold">
-              Click to learn more about me!
-            </p>
-            {selectedMember === "Bryant" && (
+            <p className="text-red-500 font-bold">Click to learn more about me!</p>
+            {selectedMember === "Frederick" && (
               <div className="mt-4 text-sm text-gray-600 space-y-2">
-                <p>Major: Finance, Accounting</p>
-                <p>Hobbies: Watching Basketball, Running, Reading</p>
+                <p>Major: Real Estate, Finance</p>
+                <p>Hobbies: Basketball, running, prediction markets</p>
                 <a
-                  href="https://www.linkedin.com/in/bryant-wright-51892b31b/"
+                  href="https://www.linkedin.com/in/frederickdeng25"
                   target="_blank"
                   rel="noreferrer"
                   className="text-blue-500 hover:underline"
                 >
-                    Visit Bryant's LinkedIn
+                  Visit Frederick's LinkedIn
                 </a>
                 <br />
                 <a
-                  href="https://outlook.office.com/mail/deeplink/compose?to=brwright5@wisc.edu" target="_blank"
-                  className="text-blue-500 hover:underline"
-                >
-                  Email Bryant
-                </a>
-              </div>
-            )}
-          </div>
-           {/* Benjie */}
-          <div className="bg-white rounded-xl shadow-md p-6 text-center hover:shadow-lg transition"
-           onClick={() => setSelectedMember(selectedMember === "Benjie" ? null : "Benjie")}
-          >
-            <img
-              src="/e-board_images/Benjie.png"
-              alt="Benjie Harthun"
-              className="w-32 h-32 mx-auto rounded-full object-cover mb-4"
-            />
-            <h3 className="text-xl font-semibold">Benjie Harthun</h3>
-            <p className="text-sm text-gray-500">Chair of Finance</p>
-            <p className="mt-2 text-sm">
-              Hi, my name is Benjie, and I’m a sophomore. I am passionate about using data-driven models to improve financial decision-making.
-            </p>
-            <p className="text-red-500 font-bold">
-              Click to learn more about me!
-            </p>
-            {selectedMember === "Benjie" && (
-              <div className="mt-4 text-sm text-gray-600 space-y-2">
-                <p>Major: Computer Science, Economics, Data Science</p>
-                <p>Hobbies: Running, Watching Sports, Pickleball</p>
-                <a
-                  href="https://www.linkedin.com/in/benjie-harthun/"
+                  href="https://outlook.office.com/mail/deeplink/compose?to=fdeng22@wisc.edu"
                   target="_blank"
-                  rel="noreferrer"
                   className="text-blue-500 hover:underline"
                 >
-                    Visit Benjie's LinkedIn
-                </a>
-                <br />
-                <a
-                  href="https://outlook.office.com/mail/deeplink/compose?to=bhartun@wisc.edu" target="_blank"
-                  className="text-blue-500 hover:underline"
-                >
-                  Email Benjie
+                  Email Frederick
                 </a>
               </div>
             )}
@@ -499,255 +349,94 @@ const Team = () => {
         </div>
       </section>
 
-      {/*  Operations Committee */}
-      <section className="max-w-6xl mx-auto px-6 pb-16">
+      {/* Operations Committee */}
+      <section className="max-w-6xl mx-auto px-6 pb-20">
         <h2 className="text-3xl font-semibold mb-2">Operations Committee</h2>
-        <p className="text-gray-600 mb-8">The Operations Committee manages logistics, club infrastructure, and internal processes.</p>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12">
-          {/* Brody */}
-          <div className="bg-white rounded-xl shadow-md p-6 text-center hover:shadow-lg transition"
-            onClick={() => setSelectedMember(selectedMember === "Brody" ? null : "Brody")}
+        <p className="text-gray-600 mb-8">
+          The Operations Committee manages logistics, club infrastructure, and internal processes.
+        </p>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-8">
+          {/* James Pangga */}
+          <div
+            className="bg-white rounded-xl shadow-md p-6 text-center hover:shadow-lg transition"
+            onClick={() => setSelectedMember(selectedMember === "James" ? null : "James")}
           >
             <img
-              src="/e-board_images/brody kerscher.png"
-              alt="Brody"
+              src="/e-board_images/Pangga_James.png"
+              alt="James Pangga"
               className="w-32 h-32 mx-auto rounded-full object-cover mb-4"
             />
-            <h3 className="text-xl font-semibold">Brody Kerscher</h3>
+            <h3 className="text-xl font-semibold">James Pangga</h3>
             <p className="text-sm text-gray-500">VP of Operations</p>
             <p className="mt-2 text-sm">
-            Hi, my name is Brody, and I’m a junior. I am passionate about expanding my knowledge of financial technology and helping others do the same.
+              Hi, my name is James, and I'm a sophomore. I am passionate about building a community
+              that intertwines business and technology, and helping develop this club further.
             </p>
-            <p className="text-red-500 font-bold">
-              Click to learn more about me!
-            </p>
-            {selectedMember === "Brody" && (
+            <p className="text-red-500 font-bold">Click to learn more about me!</p>
+            {selectedMember === "James" && (
               <div className="mt-4 text-sm text-gray-600 space-y-2">
-                <p>Major: Acturial Science, Risk Mangement & Insurance </p>
-                <p>Hobbies: Golf, Basketball, Watching movies</p>
+                <p>Major: Finance, Information Systems</p>
+                <p>Hobbies: Lifting, volleyball, fashion</p>
                 <a
-                  href="https://www.linkedin.com/in/brody-kerscher-26b512294/"
+                  href="https://www.linkedin.com/in/jamespangga/"
                   target="_blank"
                   rel="noreferrer"
                   className="text-blue-500 hover:underline"
                 >
-                    Visit Brody's LinkedIn
+                  Visit James's LinkedIn
                 </a>
                 <br />
                 <a
-                  href="https://outlook.office.com/mail/deeplink/compose?to=btkerscher@wisc.edu" target="_blank"
+                  href="https://outlook.office.com/mail/deeplink/compose?to=jpangga@wisc.edu"
+                  target="_blank"
                   className="text-blue-500 hover:underline"
                 >
-                  Email Brody
+                  Email James
                 </a>
               </div>
             )}
           </div>
-          {/* Genaro */}
-          <div className="bg-white rounded-xl shadow-md p-6 text-center hover:shadow-lg transition"
-           onClick={() => setSelectedMember(selectedMember === "Genaro" ? null : "Genaro")}
+
+          {/* Siddhant Choudhary */}
+          <div
+            className="bg-white rounded-xl shadow-md p-6 text-center hover:shadow-lg transition"
+            onClick={() => setSelectedMember(selectedMember === "Siddhant" ? null : "Siddhant")}
           >
             <img
-              src="/e-board_images/genaro camas.png"
-              alt="Genaro Camas"
+              src="/e-board_images/Choudhary_Siddhant.png"
+              alt="Siddhant Choudhary"
               className="w-32 h-32 mx-auto rounded-full object-cover mb-4"
             />
-            <h3 className="text-xl font-semibold">Genaro Camas</h3>
+            <h3 className="text-xl font-semibold">Siddhant Choudhary</h3>
             <p className="text-sm text-gray-500">Chair of Operations</p>
             <p className="mt-2 text-sm">
-            Hi, my name is Genaro, and I'm a junior. I am interested in learning about the operational side of managing a club and also in gaining more knowledge about fintech.
+              Hi, my name is Siddhant, and I'm a junior. I am interested in how technology is
+              rapidly transforming finance and exploring how those systems evolve.
             </p>
-            <p className="text-red-500 font-bold">
-              Click to learn more about me!
-            </p>
-            {selectedMember === "Genaro" && (
+            <p className="text-red-500 font-bold">Click to learn more about me!</p>
+            {selectedMember === "Siddhant" && (
               <div className="mt-4 text-sm text-gray-600 space-y-2">
-                <p>Major: Biology</p>
-                <p>Hobbies: Playing Sports, Hanging out with friends</p>
+                <p>Major: Computer Science, Mathematics</p>
+                <p>Hobbies: Listening to music, soccer, volleyball, video games, chill nights in with friends</p>
                 <a
-                  href="https://www.linkedin.com/in/genarocamas/"
+                  href="https://www.linkedin.com/in/choudhary-siddhant"
                   target="_blank"
                   rel="noreferrer"
                   className="text-blue-500 hover:underline"
                 >
-                    Visit Genaro's LinkedIn
+                  Visit Siddhant's LinkedIn
                 </a>
                 <br />
                 <a
-                  href="https://outlook.office.com/mail/deeplink/compose?to=camasmcilwai@wisc.edu" target="_blank"
-                  className="text-blue-500 hover:underline"
-                >
-                  Email Genaro
-                </a>
-              </div>
-            )}
-          </div>
-          {/* Carter  */}
-          <div className="bg-white rounded-xl shadow-md p-6 text-center hover:shadow-lg transition"
-           onClick={() => setSelectedMember(selectedMember === "Carter" ? null : "Carter")}
-          >
-            <img
-              src="/e-board_images/carter fellows.png"
-              alt="Carter Fellows"
-              className="w-32 h-32 mx-auto rounded-full object-cover mb-4"
-            />
-            <h3 className="text-xl font-semibold">Carter Fellows</h3>
-            <p className="text-sm text-gray-500">Chair of Operations</p>
-            <p className="mt-2 text-sm">
-            Hi, my name is Carter, and I'm a junior. I am interested in building this club from the ground up and gaining experience in leadership and management
-            </p>
-            <p className="text-red-500 font-bold">
-              Click to learn more about me!
-            </p>
-            {selectedMember === "Carter" && (
-              <div className="mt-4 text-sm text-gray-600 space-y-2">
-                <p>Major: Marketing, Real Estate</p>
-                <p>Hobbies: Skiing</p>
-                <a
-                  href="https://www.linkedin.com/in/carter-fellows-00376b329/"
+                  href="https://outlook.office.com/mail/deeplink/compose?to=schoudhary27@wisc.edu"
                   target="_blank"
-                  rel="noreferrer"
                   className="text-blue-500 hover:underline"
                 >
-                    Visit Carter's LinkedIn
-                </a>
-                <br />
-                <a
-                  href="https://outlook.office.com/mail/deeplink/compose?to=ctfellows@wisc.edu" target="_blank"
-                  className="text-blue-500 hover:underline"
-                >
-                  Email Carter
+                  Email Siddhant
                 </a>
               </div>
             )}
           </div>
-
-          
-        </div>
-      </section>
-
-      {/* Outreach Committee */}
-      <section className="max-w-6xl mx-auto px-6 pb-20">
-        <h2 className="text-3xl font-semibold mb-2">Outreach Committee</h2>
-        <p className="text-gray-600 mb-8">The Outreach Committee handles marketing, social media, partnerships, and campus engagement.</p>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12">
-          {/* Arnav */}
-          <div className="bg-white rounded-xl shadow-md p-6 text-center hover:shadow-lg transition"
-            onClick={() => setSelectedMember(selectedMember === "Arnav" ? null : "Arnav")}
-          >
-            <img
-              src="/e-board_images/arnav gupta.png"
-              alt="Brody"
-              className="w-32 h-32 mx-auto rounded-full object-cover mb-4"
-            />
-            <h3 className="text-xl font-semibold">Arnav Gupta</h3>
-            <p className="text-sm text-gray-500">VP of Outreach</p>
-            <p className="mt-2 text-sm">
-              Hi, my name is Arnav, and I’m a junior. I am highly interested in AI and other technologies used in the financial industry.
-            </p>
-            <p className="text-red-500 font-bold">
-              Click to learn more about me!
-            </p>
-            {selectedMember === "Arnav" && (
-              <div className="mt-4 text-sm text-gray-600 space-y-2">
-                <p>Major: Data Science, Economics </p>
-                <p>Hobbies: Cornhole, Running, Basketball</p>
-                <a
-                  href="https://www.linkedin.com/in/arnav---gupta/"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="text-blue-500 hover:underline"
-                >
-                    Visit Arnav's LinkedIn
-                </a>
-                <br />
-                <a
-                  href="https://outlook.office.com/mail/deeplink/compose?to=gupta345@wisc.edu" target="_blank"
-                  className="text-blue-500 hover:underline"
-                >
-                  Email Arnav
-                </a>
-              </div>
-            )}
-          </div>
-          {/* Dora */}
-          <div className="bg-white rounded-xl shadow-md p-6 text-center hover:shadow-lg transition"
-           onClick={() => setSelectedMember(selectedMember === "Dora" ? null : "Dora")}
-          >
-            <img
-              src="/e-board_images/dora tsai.png"
-              alt="Dora Tsai"
-              className="w-32 h-32 mx-auto rounded-full object-cover mb-4"
-            />
-            <h3 className="text-xl font-semibold">Dora Tsai</h3>
-            <p className="text-sm text-gray-500">Chair of Outreach</p>
-            <p className="mt-2 text-sm">
-            Hi, my name is Dora, and I’m a junior. I joined this club because I’m excited to be part of a community that encourages exploring new interests in fintech.            </p>
-            <p className="text-red-500 font-bold">
-              Click to learn more about me!
-            </p>
-            {selectedMember === "Dora" && (
-              <div className="mt-4 text-sm text-gray-600 space-y-2">
-                <p>Major: Data Science, Sports Communication</p>
-                <p>Hobbies: Eating </p>
-                <a
-                  href="https://www.linkedin.com/in/dora-t-a672692a8/"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="text-blue-500 hover:underline"
-                >
-                    Visit Dora's LinkedIn
-                </a>
-                <br />
-                <a
-                  href="https://outlook.office.com/mail/deeplink/compose?to=ptsai34@wisc.edu" target="_blank"
-                  className="text-blue-500 hover:underline"
-                >
-                  Email Dora
-                </a>
-              </div>
-            )}
-          </div>
-          {/* Eli  */}
-          <div className="bg-white rounded-xl shadow-md p-6 text-center hover:shadow-lg transition"
-           onClick={() => setSelectedMember(selectedMember === "Eli" ? null : "Eli")}
-          >
-            <img
-              src="/e-board_images/eli olson.png"
-              alt="Eli Olson"
-              className="w-32 h-32 mx-auto rounded-full object-cover mb-4"
-            />
-            <h3 className="text-xl font-semibold">Eli Olson</h3>
-            <p className="text-sm text-gray-500">Chair of Outreach</p>
-            <p className="mt-2 text-sm">
-            Hi, my name is Eli, and I'm a junior. I am interested in a club that helps me reach my goals of learning more about business and STEM, and the fintech club is just the right one!
-            </p>
-            <p className="text-red-500 font-bold">
-              Click to learn more about me!
-            </p>
-            {selectedMember === "Eli" && (
-              <div className="mt-4 text-sm text-gray-600 space-y-2">
-                <p>Major: Electrical Engineering</p>
-                <p>Hobbies: Eating, Doomscrolling</p>
-                <a
-                  href="https://www.linkedin.com/in/eli-olson-821b8b372/"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="text-blue-500 hover:underline"
-                >
-                    Visit Eli's LinkedIn
-                </a>
-                <br />
-                <a
-                  href="https://outlook.office.com/mail/deeplink/compose?to=eeolson23@wisc.edu" target="_blank"
-                  className="text-blue-500 hover:underline"
-                >
-                  Email Eli
-                </a>
-              </div>
-            )}
-          </div>
-
         </div>
       </section>
 
