@@ -5,32 +5,32 @@ import Footer from "../components/layout/Footer";
 export default function Home() {
   // Ordered by approximate prestige; includes all available logo files
   const logosOrdered = [
-    "microsoft-word.svg",
-    "amazon.png",
-    "meta.png",
-    "netflix.png",
-    "mastercard.png",
-    "oliver-wyman.png",
-    "PwC.png",
-    "kpmg.png",
-    "American-Express.png",
-    "allianz.png",
-    "c-1-logo.png",
-    "IBM.png",
-    "munich.png",
-    "aon.png",
-    "milliman.png",
-    "Kimberly-Clark.png",
-    "northwestern.png",
-    "allstate.png",
-    "americanFamily.png",
-    "humana.png",
-    "vikings.png",
-    "bhsi-logo.png",
-    "TDS.png",
-    "Skyward.png",
-    "m3.png",
-    "cardinal_health.png"
+    { file: "microsoft-word.svg", name: "Microsoft" },
+    { file: "amazon.png", name: "Amazon" },
+    { file: "meta.png", name: "Meta" },
+    { file: "netflix.png", name: "Netflix" },
+    { file: "mastercard.png", name: "Mastercard" },
+    { file: "oliver-wyman.png", name: "Oliver Wyman" },
+    { file: "PwC.png", name: "PwC" },
+    { file: "kpmg.png", name: "KPMG" },
+    { file: "American-Express.png", name: "American Express" },
+    { file: "allianz.png", name: "Allianz" },
+    { file: "c-1-logo.png", name: "Capital One" },
+    { file: "IBM.png", name: "IBM" },
+    { file: "munich.png", name: "Munich Re" },
+    { file: "aon.png", name: "Aon" },
+    { file: "milliman.png", name: "Milliman" },
+    { file: "Kimberly-Clark.png", name: "Kimberly-Clark" },
+    { file: "northwestern.png", name: "Northwestern Mutual" },
+    { file: "allstate.png", name: "Allstate" },
+    { file: "americanFamily.png", name: "American Family Insurance" },
+    { file: "humana.png", name: "Humana" },
+    { file: "vikings.png", name: "Minnesota Vikings" },
+    { file: "bhsi-logo.png", name: "Berkshire Hathaway Specialty Insurance" },
+    { file: "TDS.png", name: "TDS Telecom" },
+    { file: "Skyward.png", name: "Skyward" },
+    { file: "m3.png", name: "M3 Insurance" },
+    { file: "cardinal_health.png", name: "Cardinal Health" },
   ];
 
   return (
@@ -124,8 +124,8 @@ export default function Home() {
             {[...logosOrdered, ...logosOrdered].map((logo, i) => (
               <div key={i} className="logo-cell">
                 <img
-                  src={`/company_logos/${logo}`}
-                  alt={logo}
+                  src={`/company_logos/${logo.file}`}
+                  alt={logo.name}
                   className="logo-img"
                   loading="lazy"
                   decoding="async"
