@@ -2,8 +2,11 @@ import React, { useEffect } from "react";
 import { Link, Navigate, useNavigate } from "react-router-dom";
 import { useAuth } from "../auth/AuthContext";
 import Navbar from "../components/layout/Navbar";
+import useDocumentTitle from "../hooks/useDocumentTitle";
 
 const PendingApproval = () => {
+  useDocumentTitle("Membership Pending", "Your Fintech@UW membership status.");
+
   const { session, profile, isApproved, isLoading, signOut } = useAuth();
   const navigate = useNavigate();
 

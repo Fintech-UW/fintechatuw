@@ -1,8 +1,14 @@
 import React from "react";
 import Navbar from "../components/layout/Navbar";
 import Footer from "../components/layout/Footer";
+import useDocumentTitle from "../hooks/useDocumentTitle";
 
 const About = () => {
+  useDocumentTitle(
+    "About",
+    "Learn about Fintech@UW's mission to build a collaborative community exploring finance and technology at UW–Madison.",
+  );
+
   const baseUrl = import.meta.env.BASE_URL ?? "/";
   const sponsorshipPacketUrl = `${baseUrl}docs/sponsorship_packet.pdf`;
   const sponsorshipPacketDisplayUrl = `${sponsorshipPacketUrl}#toolbar=0&navpanes=0`;

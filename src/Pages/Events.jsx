@@ -1,8 +1,14 @@
 import React from "react";
 import Navbar from "../components/layout/Navbar";
 import Footer from "../components/layout/Footer";
+import useDocumentTitle from "../hooks/useDocumentTitle";
 
 const Events = () => {
+  useDocumentTitle(
+    "Events",
+    "See upcoming Fintech@UW workshops, speaker events, and meetings on our club calendar.",
+  );
+
   return (
     <main className="min-h-screen bg-gray-50 text-gray-800 overflow-x-hidden">
       <Navbar />

@@ -1,5 +1,6 @@
 import React from "react";
 import Navbar from "../components/layout/Navbar";
+import useDocumentTitle from "../hooks/useDocumentTitle";
 
 const nonSensitiveResources = [
   {
@@ -35,6 +36,8 @@ const sensitiveResources = [
 ];
 
 const MemberPortal = () => {
+  useDocumentTitle("Member Portal", "Fintech@UW member resources and officer-shared materials.");
+
   return (
     <main className="min-h-screen bg-gray-50 text-gray-800">
       <Navbar />

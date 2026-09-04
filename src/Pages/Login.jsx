@@ -2,8 +2,11 @@ import React, { useEffect, useMemo, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import { useAuth } from "../auth/AuthContext";
 import Navbar from "../components/layout/Navbar";
+import useDocumentTitle from "../hooks/useDocumentTitle";
 
 const Login = () => {
+  useDocumentTitle("Member Login", "Sign in with your @wisc.edu email to access the Fintech@UW member portal.");
+
   const {
     session,
     isApproved,

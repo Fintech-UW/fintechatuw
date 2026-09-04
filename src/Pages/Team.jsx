@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Navbar from "../components/layout/Navbar";
 import Footer from "../components/layout/Footer";
 import TeamMemberCard from "../components/TeamMemberCard";
+import useDocumentTitle from "../hooks/useDocumentTitle";
 
 const COMMITTEES = [
   {
@@ -163,6 +164,8 @@ const COMMITTEES = [
 ];
 
 const Team = () => {
+  useDocumentTitle("The Team", "Meet the officers leading Fintech@UW at UW–Madison.");
+
   const [selectedMember, setSelectedMember] = useState(null);
 
   const toggleMember = (id) => {
