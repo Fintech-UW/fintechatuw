@@ -2,8 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import AuthNavItems from "../AuthNavItems";
 
-const JOIN_URL =
-  "https://linktr.ee/fintechuw?fbclid=PAZXh0bgNhZW0CMTEAAadsdHIdE-4ELJo7VeVNAS-uGD8GcrQOas6_JTAtlrDkqbIgwefiHT-LNhZ5bw_aem_ybNM8nOQMb0hocVQXjWqeg";
+const JOIN_URL = "https://linktr.ee/fintechuw";
 
 const NAV_LINKS = [
   { to: "/about", label: "About" },
