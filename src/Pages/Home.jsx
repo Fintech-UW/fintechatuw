@@ -1,16 +1,8 @@
-import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
-import AuthNavItems from "../components/AuthNavItems";
+import React from "react";
+import Navbar from "../components/layout/Navbar";
+import Footer from "../components/layout/Footer";
 
 export default function Home() {
-  const [scrolled, setScrolled] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => setScrolled(window.scrollY > 25);
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
   // Ordered by approximate prestige; includes all available logo files
   const logosOrdered = [
     "microsoft-word.svg",
@@ -50,11 +42,6 @@ export default function Home() {
         .no-scrollbar::-webkit-scrollbar { display: none; }
         .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
 
-        /* Desktop: keep nav links + Join together on the right */
-        @media (min-width: 768px) {
-          .nav-strip { overflow: visible !important; white-space: normal !important; }
-        }
-
         /* Offer wheel logo sizing: fixed height + auto width to keep visible spacing consistent */
         .logo-cell { display: inline-flex; align-items: center; justify-content: center; height: 64px; flex: 0 0 auto; }
         @media (min-width: 640px) { .logo-cell { height: 80px; } }
@@ -62,6 +49,8 @@ export default function Home() {
         .logo-img { height: 100%; width: auto; max-width: clamp(120px, 18vw, 220px); display: block; object-fit: contain; }
 
       `}</style>
+
+      <Navbar variant="transparent" />
 
       <section
         style={{
@@ -73,94 +62,6 @@ export default function Home() {
         }}
         className="relative"
       >
-         {/* NAV */}
-        <nav
-          className={`fixed w-full top-0 z-50 transition-all duration-300 ${
-            scrolled
-              ? "bg-white shadow-md text-black"
-              : "bg-transparent text-white"
-          }`}
-        >
-          <div className="max-w-7xl mx-auto px-3 sm:px-4">
-            <div className="flex h-14 sm:h-16 items-center gap-3">
-              {/* Left: brand */}
-              <Link to="/" className="flex items-center gap-3 min-w-0 flex-none">
-                <img
-                  src="/fintech-at-uw-logo.png"
-                  alt="Fintech Logo"
-                  className="w-10 h-auto sm:w-12 shrink-0"
-                />
-                <div
-                  className={`${
-                    !scrolled
-                      ? "drop-shadow-[0_1px_1px_rgba(0,0,0,0.35)]"
-                      : ""
-                  } min-w-0`}
-                >
-                  <h1 className="text-base sm:text-lg font-bold truncate">
-                    FinTech@UW
-                  </h1>
-                  
-                </div>
-              </Link>
-
-              {/* Links */}
-              <div className="min-w-0 flex-1">
-                <ul
-                  className="
-                    nav-strip
-                    flex items-center gap-4 sm:gap-6 font-medium text-sm sm:text-base
-                    overflow-x-auto no-scrollbar whitespace-nowrap
-                    md:justify-end
-                  "
-                >
-                  <li className="shrink-0">
-                    <Link to="/about" className="hover:opacity-80">About</Link>
-                  </li>
-                  <li className="shrink-0">
-                    <Link to="/events" className="hover:opacity-80">Events</Link>
-                  </li>
-                  <li className="shrink-0">
-                    <Link to="/resources" className="hover:opacity-80">Resources</Link>
-                  </li>
-                  <li className="shrink-0">
-                    <Link to="/team" className="hover:opacity-80">The Team</Link>
-                  </li>
-                  <AuthNavItems />
-
-                  {/* Desktop Join */}
-                  <li className="hidden md:block shrink-0">
-                    <a
-                      href="https://linktr.ee/fintechuw?fbclid=PAZXh0bgNhZW0CMTEAAadsdHIdE-4ELJo7VeVNAS-uGD8GcrQOas6_JTAtlrDkqbIgwefiHT-LNhZ5bw_aem_ybNM8nOQMb0hocVQXjWqeg"
-                      className={`inline-block px-4 py-2 rounded-full transition ${
-                        scrolled
-                          ? "bg-blue-600 text-white hover:bg-blue-700"
-                          : "border border-white text-white hover:opacity-80"
-                      }`}
-                    >
-                      Join
-                    </a>
-                  </li>
-                </ul>
-              </div>
-
-              {/* Mobile Join */}
-              <div className="flex-none md:hidden">
-                <a
-                  href="https://linktr.ee/fintechuw?fbclid=PAZXh0bgNhZW0CMTEAAadsdHIdE-4ELJo7VeVNAS-uGD8GcrQOas6_JTAtlrDkqbIgwefiHT-LNhZ5bw_aem_ybNM8nOQMb0hocVQXjWqeg"
-                  className={`inline-block px-3 py-1.5 rounded-full text-sm transition ${
-                    scrolled
-                      ? "bg-blue-600 text-white hover:bg-blue-700"
-                      : "border border-white text-white hover:opacity-80"
-                  }`}
-                >
-                  Join
-                </a>
-              </div>
-            </div>
-          </div>
-        </nav>
-
         {/* HERO */}
         <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-4 z-10">
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white drop-shadow-[0_2px_2px_rgba(0,0,0,0.45)]">
@@ -176,8 +77,8 @@ export default function Home() {
       <section className="bg-white py-12 px-5 sm:py-20 sm:px-12 md:px-20 text-center">
         <h2 className="text-3xl sm:text-4xl font-bold mb-5">What We Do</h2>
         <p className="text-base sm:text-lg max-w-3xl mx-auto text-gray-700">
-          Fintech@UW is a student organization focused on the intersection of finance and technology. 
-          Our mission is to create an enduring FinTech community at UW Madison while equipping our members 
+          Fintech@UW is a student organization focused on the intersection of finance and technology.
+          Our mission is to create an enduring FinTech community at UW Madison while equipping our members
           with practical experience and expertise to utilize fintech for their personal and professional growth.
         </p>
       </section>
@@ -186,8 +87,8 @@ export default function Home() {
       <section className="bg-gray-100 py-12 px-5 sm:py-20 sm:px-12 md:px-20 text-center">
         <h2 className="text-3xl sm:text-4xl font-bold mb-5">Why It Matters</h2>
         <p className="text-base sm:text-lg max-w-3xl mx-auto text-gray-700">
-          The financial world is changing quickly. Today's professionals need to be able to blend 
-          their financial expertise with technical ability. We're here to create a network where 
+          The financial world is changing quickly. Today's professionals need to be able to blend
+          their financial expertise with technical ability. We're here to create a network where
           students can connect with one another, develop applicable skills, and explore career
           opportunities that blend both fields.
         </p>
@@ -210,7 +111,7 @@ export default function Home() {
           </a>
         </div>
       </section>
-      
+
 
       {/* Logos */}
       <section className="overflow-hidden bg-white py-12 px-5 sm:py-20 sm:px-12 md:px-20 text-center">
@@ -241,31 +142,7 @@ export default function Home() {
         `}</style>
       </section>
 
-{/* Footer Content */}
-       <section>
-              <div class="footer">
-                <div class="footer-inside">
-                  <p id="text"><Link to="/team">The Team</Link></p>
-                  <p id="text"><Link to="/about">Our Mission</Link></p>
-                  <p id="text-padding-bottom"><Link to="/resources">Resources</Link></p>
-                </div>
-                <div class="footer-inside-right">
-                  <p id="text-club-name"><Link to="/"><strong>FinTech@UW</strong></Link></p>
-                  <p id="text-email">Email: <a href="mailto:fintechuwmadison@outlook.com"><u>fintechuwmadison@outlook.com</u></a></p>
-                  <p id="text">
-                    <span className="location-text">Madison, Wisconsin 53706       </span> {/* Added whitespace to improve appearance */}
-                    <span className="logo-container">
-                      <a href="https://www.linkedin.com/company/fintech-uw/" target="_blank"><img src="/socials-images/linkedin.png" id="linkedin-logo" /></a>
-                      <a href="https://www.instagram.com/fintechuw/" target="_blank"><img src="/socials-images/instagram.png" id="instagram-logo" /></a>
-                    </span>
-                  </p>   
-                </div>
-              </div>
-            </section>
-
-
-
-
+      <Footer />
     </main>
   );
 };

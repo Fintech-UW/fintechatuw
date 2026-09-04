@@ -1,6 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import AuthNavItems from "../components/AuthNavItems";
+import Navbar from "../components/layout/Navbar";
 
 const nonSensitiveResources = [
   {
@@ -38,47 +37,7 @@ const sensitiveResources = [
 const MemberPortal = () => {
   return (
     <main className="min-h-screen bg-gray-50 text-gray-800">
-      <nav className="fixed w-full top-0 z-50 bg-white shadow-md text-black">
-        <div className="max-w-7xl mx-auto px-3 sm:px-4">
-          <div className="flex h-14 sm:h-16 items-center gap-3">
-            <Link to="/" className="flex items-center gap-3 min-w-0 flex-none">
-              <img
-                src="/fintech-at-uw-logo.png"
-                alt="Fintech Logo"
-                className="w-10 h-auto sm:w-12 shrink-0"
-              />
-              <div className="min-w-0">
-                <h1 className="text-base sm:text-lg font-bold truncate">FinTech@UW</h1>
-              </div>
-            </Link>
-
-            <div className="min-w-0 flex-1">
-              <ul
-                className="
-                  nav-strip
-                  flex items-center gap-4 sm:gap-6 font-medium text-sm sm:text-base
-                  overflow-x-auto no-scrollbar whitespace-nowrap
-                  md:justify-end
-                "
-              >
-                <li className="shrink-0">
-                  <Link to="/about" className="hover:opacity-80">About</Link>
-                </li>
-                <li className="shrink-0">
-                  <Link to="/events" className="hover:opacity-80">Events</Link>
-                </li>
-                <li className="shrink-0">
-                  <Link to="/resources" className="hover:opacity-80">Resources</Link>
-                </li>
-                <li className="shrink-0">
-                  <Link to="/team" className="hover:opacity-80">The Team</Link>
-                </li>
-                <AuthNavItems />
-              </ul>
-            </div>
-          </div>
-        </div>
-      </nav>
+      <Navbar />
 
       <section className="max-w-6xl mx-auto px-6 pt-32 pb-8">
         <h1 className="text-4xl font-bold mb-3">Member Portal</h1>

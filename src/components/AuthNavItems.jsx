@@ -5,6 +5,7 @@ import { useAuth } from "../auth/AuthContext";
 const AuthNavItems = ({
   linkClassName = "hover:opacity-80",
   logoutClassName = "hover:opacity-80",
+  onNavigate,
 }) => {
   const { session, isApproved, signOut } = useAuth();
 
@@ -12,11 +13,15 @@ const AuthNavItems = ({
     <>
       <li className="shrink-0">
         {session ? (
-          <Link to={isApproved ? "/member-portal" : "/pending-approval"} className={linkClassName}>
+          <Link
+            to={isApproved ? "/member-portal" : "/pending-approval"}
+            className={linkClassName}
+            onClick={onNavigate}
+          >
             {isApproved ? "Member Portal" : "Approval Status"}
           </Link>
         ) : (
-          <Link to="/login" className={linkClassName}>
+          <Link to="/login" className={linkClassName} onClick={onNavigate}>
             Login
           </Link>
         )}
@@ -28,6 +33,7 @@ const AuthNavItems = ({
             type="button"
             onClick={() => {
               void signOut();
+              onNavigate?.();
             }}
             className={logoutClassName}
           >
