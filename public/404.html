@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fintech@UW</title>
+    <script>
+      // GitHub Pages has no server-side routing, so a direct visit to a path
+      // like /about (rather than /#/about) hits this 404 page. Since the app
+      // uses HashRouter, forward the visitor into the equivalent hash route
+      // instead of showing a dead end.
+      var path = window.location.pathname + window.location.search;
+      window.location.replace("/#" + path);
+    </script>
+  </head>
+  <body>
+    <p>Redirecting to Fintech@UW&hellip;</p>
+  </body>
+</html>
