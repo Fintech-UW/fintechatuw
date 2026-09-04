@@ -54,7 +54,7 @@ export default function Home() {
 
       <section
         style={{
-          backgroundImage: `url('/coverImage.png')`,
+          backgroundImage: `url('/coverImage.jpg')`,
           width: "100%",
           height: "100vh",
           backgroundSize: "cover",
