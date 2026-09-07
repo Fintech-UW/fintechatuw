@@ -397,6 +397,47 @@ const Team = () => {
             )}
           </div>
 
+          {/* Sarah Crowe */}
+          <div
+            className="bg-white rounded-xl shadow-md p-6 text-center hover:shadow-lg transition"
+            onClick={() => setSelectedMember(selectedMember === "Sarah" ? null : "Sarah")}
+          >
+            <img
+              src="/e-board_images/Crowe_Sarah.png"
+              alt="Sarah Crowe"
+              className="w-32 h-32 mx-auto rounded-full object-cover mb-4"
+            />
+            <h3 className="text-xl font-semibold">Siddhant Choudhary</h3>
+            <p className="text-sm text-gray-500">Chair of Operations</p>
+            <p className="mt-2 text-sm">
+              Hi, my name is Sarah, and I'm a junior. I am passionate about exploring the intersection of finance 
+              and technology, while continuing to broaden my technical skills for both personal and professional growth.
+            </p>
+            <p className="text-red-500 font-bold">Click to learn more about me!</p>
+            {selectedMember === "Sarah" && (
+              <div className="mt-4 text-sm text-gray-600 space-y-2">
+                <p>Major: Personal Finance</p>
+                <p>Hobbies: Tennis, running, walking my dog, going to the beach</p>
+                <a
+                  href="https://www.linkedin.com/in/crowe-sarah"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-blue-500 hover:underline"
+                >
+                  Visit Sarah's LinkedIn
+                </a>
+                <br />
+                <a
+                  href="https://outlook.office.com/mail/deeplink/compose?to=sdcrowe@wisc.edu"
+                  target="_blank"
+                  className="text-blue-500 hover:underline"
+                >
+                  Email Sarah
+                </a>
+              </div>
+            )}
+          </div>
+
           {/* Siddhant Choudhary */}
           <div
             className="bg-white rounded-xl shadow-md p-6 text-center hover:shadow-lg transition"
