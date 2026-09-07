@@ -407,7 +407,7 @@ const Team = () => {
               alt="Sarah Crowe"
               className="w-32 h-32 mx-auto rounded-full object-cover mb-4"
             />
-            <h3 className="text-xl font-semibold">Siddhant Choudhary</h3>
+            <h3 className="text-xl font-semibold">Sarah Crowe</h3>
             <p className="text-sm text-gray-500">Chair of Operations</p>
             <p className="mt-2 text-sm">
               Hi, my name is Sarah, and I'm a junior. I am passionate about exploring the intersection of finance 
