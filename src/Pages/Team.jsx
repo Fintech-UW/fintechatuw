@@ -192,14 +192,26 @@ const Team = () => {
           <h2 className="text-3xl font-semibold mb-2">{committee.name}</h2>
           <p className="text-gray-600 mb-8">{committee.description}</p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
-            {committee.members.map((member) => (
-              <TeamMemberCard
-                key={member.id}
-                member={member}
-                isExpanded={selectedMember === member.id}
-                onToggle={() => toggleMember(member.id)}
-              />
-            ))}
+            {committee.members.map((member, memberIndex) => {
+              // If a committee has an odd number of members, the last card
+              // would otherwise sit alone in the left column with dead space
+              // beside it. Center it and cap its width instead. Driven by the
+              // member count, not any specific committee/person, so this
+              // applies automatically if any committee's roster changes.
+              const isOddOneOut =
+                committee.members.length % 2 === 1 &&
+                memberIndex === committee.members.length - 1;
+
+              return (
+                <TeamMemberCard
+                  key={member.id}
+                  member={member}
+                  isExpanded={selectedMember === member.id}
+                  onToggle={() => toggleMember(member.id)}
+                  className={isOddOneOut ? "sm:col-span-2 sm:max-w-md sm:mx-auto" : ""}
+                />
+              );
+            })}
           </div>
         </section>
       ))}

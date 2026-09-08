@@ -1,6 +1,6 @@
 import React from "react";
 
-const TeamMemberCard = ({ member, isExpanded, onToggle }) => {
+const TeamMemberCard = ({ member, isExpanded, onToggle, className = "" }) => {
   const handleKeyDown = (event) => {
     if (event.key === "Enter" || event.key === " ") {
       event.preventDefault();
@@ -17,7 +17,7 @@ const TeamMemberCard = ({ member, isExpanded, onToggle }) => {
       aria-expanded={isExpanded}
       onClick={onToggle}
       onKeyDown={handleKeyDown}
-      className="bg-white rounded-xl shadow-md p-6 text-center hover:shadow-lg transition cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2"
+      className={`bg-white rounded-xl shadow-md p-6 text-center hover:shadow-lg transition cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2 ${className}`}
     >
       <img
         src={member.photo}
