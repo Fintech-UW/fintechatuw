@@ -99,7 +99,7 @@ const Login = () => {
 
           {!isConfigured ? (
             <div className="rounded-md border border-red-200 bg-red-50 p-4 text-sm text-red-700">
-              Auth is not configured yet. Add <code>VITE_SUPABASE_URL</code> and <code>VITE_SUPABASE_ANON_KEY</code>.
+              Member login is temporarily unavailable — contact an officer if you need access.
             </div>
           ) : (
             <>
