@@ -7,9 +7,11 @@ import Resources from "./Pages/Resources";
 import Login from "./Pages/Login";
 import PendingApproval from "./Pages/PendingApproval";
 import MemberPortal from "./Pages/MemberPortal";
+import Admin from "./Pages/Admin";
 import { HashRouter, Navigate, Route, Routes } from "react-router-dom";
 import { AuthProvider } from "./auth/AuthProvider";
 import ProtectedRoute from "./components/ProtectedRoute";
+import AdminRoute from "./components/AdminRoute";
 
 
 export default function App() {
@@ -30,6 +32,14 @@ export default function App() {
               <ProtectedRoute>
                 <MemberPortal />
               </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/admin"
+            element={
+              <AdminRoute>
+                <Admin />
+              </AdminRoute>
             }
           />
           <Route path="*" element={<Navigate to="/" replace />} />
