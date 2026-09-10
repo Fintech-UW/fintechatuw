@@ -204,6 +204,7 @@ export function AuthProvider({ children }) {
       user,
       profile,
       isApproved: profile?.membership_status === "approved",
+      isAdmin: profile?.role === "admin",
       isLoading,
       isConfigured: hasSupabaseEnv,
       signIn,

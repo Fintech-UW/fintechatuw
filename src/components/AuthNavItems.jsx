@@ -7,7 +7,7 @@ const AuthNavItems = ({
   logoutClassName = "hover:opacity-80",
   onNavigate,
 }) => {
-  const { session, isApproved, signOut } = useAuth();
+  const { session, isApproved, isAdmin, signOut } = useAuth();
 
   return (
     <>
@@ -26,6 +26,14 @@ const AuthNavItems = ({
           </Link>
         )}
       </li>
+
+      {session && isAdmin ? (
+        <li className="shrink-0">
+          <Link to="/admin" className={linkClassName} onClick={onNavigate}>
+            Manage Members
+          </Link>
+        </li>
+      ) : null}
 
       {session ? (
         <li className="shrink-0">
